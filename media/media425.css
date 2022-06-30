@@ -1,0 +1,23 @@
+.header .nav {
+    flex-direction: column;
+    padding: 0 4%;
+    height: 8rem;
+    margin: 2rem 0;
+}
+
+.header .nav a {
+    font-size: 2rem;
+}
+
+.header .nav ol li {
+    margin-right: 1rem;
+}
+
+.main__html-component {
+    grid-template-columns: 1fr;
+}
+
+.footer__box h1 {
+    font-size: 1rem;
+    padding: 0 2%;
+}

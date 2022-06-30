@@ -1,0 +1,27 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css);
+
+body {
+    transition: all .5s;
+}
+
+.theme-light {
+    --color-bg-primary: #e6e7e8;
+    --color-link : black;
+
+    --text-color: #000000;
+
+    --bg-linear-primary: #FFFFFF;
+    --bg-linear-secondary: #DDDDDD;
+}
+
+.theme-dark {
+    --color-bg-primary: #161b22;
+    --color-link : rgb(255, 255, 255);
+
+    --text-color: #c9d1d9;
+
+    --bg-linear-primary: #21262d;
+    --bg-linear-secondary: #3a4555;
+
+    --extra-bg-color: #161b22;
+}
