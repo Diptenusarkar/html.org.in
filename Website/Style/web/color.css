@@ -12,6 +12,10 @@ body {
 
     --bg-linear-primary: #FFFFFF;
     --bg-linear-secondary: #DDDDDD;
+
+    --color-heading: #000000;
+    --table-color: #000000;
+    --note-text-color: #ffffff;
 }
 
 .theme-dark {
@@ -24,4 +28,8 @@ body {
     --bg-linear-secondary: #3a4555;
 
     --extra-bg-color: #161b22;
+
+    --color-heading: #ffffff;
+    --table-color: #ffffff;
+    --note-text-color: #151718;
 }

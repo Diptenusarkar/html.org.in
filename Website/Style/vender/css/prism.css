@@ -32,8 +32,8 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  
  /* Code blocks */
  pre[class*="language-"] {
-     padding: 1em;
-     margin: .5em 0;
+     padding: 0 1em;
+     margin: 2rem 0;
      overflow: auto;
  }
  
@@ -46,7 +46,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  
  /* Inline code */
  :not(pre) > code[class*="language-"] {
-     padding: .1em;
+     padding: 0em;
      border-radius: .3em;
      white-space: normal;
  }
