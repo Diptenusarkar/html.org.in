@@ -73,6 +73,10 @@ table {
     width: 100%;
 }
 
+div .none {
+    all: none !important; 
+}
+
 td,
 th {
     border: 1px solid var(--table-color);
@@ -134,7 +138,7 @@ th {
 
 .htmlpost__box ul li,
 .htmlpost__box ol li {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .htmlpost__box p {
@@ -240,6 +244,12 @@ img {
     .footer__box h1 {
         font-size: 1rem;
         padding: 0 2%;
+    }
+}
+
+@media print and (max-width: 425000px) {
+    body {
+        display: none;
     }
 }
 
