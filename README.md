@@ -6,7 +6,7 @@ Basically, we create this website for you. You don't need to take any subscripti
 Before you going to contribute, You need to know there is more than one step.
 1. **First Step** 
 	- You need to create a folder on **HTML** folder.
-	 - Then Create another folder with **html_yourname**.
+	 - Then Create a folder with **html_yourname**.
 	 - Create an **index.html** file.
 2. **Second Step**
 	- copy **copy.html** file

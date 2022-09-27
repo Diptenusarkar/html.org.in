@@ -41,25 +41,8 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav class="nav">
-            <a href="/" class="logo__top">HTML.ORG.IN</a>
-            
-            <ol>
-                <li><a href="/">Home</a></li>
-                <li><a href="#">HTML Compunent</a></li>
-                <li><a href="https://github.com/Diptenusarkar/html.org.in/fork">Fork Me <i class="bi bi-github"></i></a></li>
-            </ol>
-        </nav>
-    </header>
-
-    <div class="theme__box">
-        <select id="themeSwitcher">
-            <option value="">Select One</option>
-            <option value="theme-dark">Dark</option>
-            <option value="theme-light">Light</option>
-        </select>
-    </div>
+    <div include-html="../../include/header.html" id="header_file"></div>    
+    <div include-html="../../include/themeSwitcher.html" id="themeSwitcher_file"></div>
     
     <main class="main">
         <div class="navigation-link">
@@ -131,11 +114,9 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="footer__box">
-            <h1>We believe that open source can make a difference. <br> So that's why html.org.in will be free for all forever &#128150;</h1>
-        </div>
-    </footer>
+    <div include-html="../../include/footer.html" id="footer_file"></div>
+    <script src="../../Website/JavaScript/jquery-3.6.0.min.js"></script>
+    <script src="../../Website/JavaScript/include-html.min.js"></script>
 
     <script src="../../Website/Style/vender/js/prism.js"></script>
     <script src="../../Website/app.js"></script>
