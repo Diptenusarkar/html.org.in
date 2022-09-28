@@ -41,15 +41,21 @@
 </head>
 
 <body>
-    <div include-html="../../include/header.html" id="header_file"></div>    
-    <div include-html="../../include/themeSwitcher.html" id="themeSwitcher_file"></div>
-    
+    <div include-html="../../include/header.html" id="header_file"></div>
+    <div class="theme__box">
+        <select id="themeSwitcher">
+            <option value="">Select One</option>
+            <option value="theme-dark">Dark</option>
+            <option value="theme-light">Light</option>
+        </select>
+    </div>
+
     <main class="main">
         <div class="navigation-link">
             <a href="../html_basic/"><i class="bi bi-chevron-double-left"></i> Previous</a>
             <a href="../html_attributes/">Next <i class="bi bi-chevron-double-right"></i></a>
         </div>
-        
+
         <div class="htmlpost__box">
             <h1>HTML Elements &#128204;</h1>
             <hr>
@@ -63,13 +69,15 @@
                 <br>
                 It means that you can add an HTML element inside another HTML element.
                 as we all know <span class="imp-text">HTML</span> itself is an element.
-                & also we know we need to add <span class="imp-text">body</span> & <span class="imp-text">body</span> so on.
+                & also we know we need to add <span class="imp-text">body</span> & <span class="imp-text">body</span> so
+                on.
                 <br>
-                if you remember our preveious post <span class="imp-text">HTML Basic</span> then you can recoganize <span class="imp-text">head & body</span> also a HTML element.
+                if you remember our preveious post <span class="imp-text">HTML Basic</span> then you can recoganize
+                <span class="imp-text">head & body</span> also a HTML element.
                 <br>
-                <h3>This is a very important point to understand.</h3>
-                <br>
-                <pre class="language-html">
+            <h3>This is a very important point to understand.</h3>
+            <br>
+            <pre class="language-html">
                     <code>
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -102,7 +110,7 @@
     <div include-html="../../include/footer.html" id="footer_file"></div>
     <script src="../../Website/JavaScript/jquery-3.6.0.min.js"></script>
     <script src="../../Website/JavaScript/include-html.min.js"></script>
-    
+
     <script src="../../Website/Style/vender/js/prism.js"></script>
     <script src="../../Website/app.js"></script>
 </body>

@@ -41,15 +41,21 @@
 </head>
 
 <body>
-    <div include-html="../../include/header.html" id="header_file"></div>    
-    <div include-html="../../include/themeSwitcher.html" id="themeSwitcher_file"></div>
-    
+    <div include-html="../../include/header.html" id="header_file"></div>
+    <div class="theme__box">
+        <select id="themeSwitcher">
+            <option value="">Select One</option>
+            <option value="theme-dark">Dark</option>
+            <option value="theme-light">Light</option>
+        </select>
+    </div>
+
     <main class="main">
         <div class="navigation-link">
             <a href="../html_formatting/"><i class="bi bi-chevron-double-left"></i> Previous</a>
             <a href="#">Next <i class="bi bi-chevron-double-right"></i></a>
         </div>
-        
+
         <div class="htmlpost__box">
             <h1>HTML Comments &#128204;</h1>
             <hr>
@@ -59,10 +65,10 @@
             <hr>
             <h2>Why we need comments?</h2>
             <p>When we write HTML comments, Then the browser will automatically ignore this. <br> <br>
-            <code>
+                <code>
                 &lt;!-- This is a comment --&gt;
             </code> <br> <br>
-            Now maybe you have a question about why we need these comments
+                Now maybe you have a question about why we need these comments
             </p>
         </div>
 
@@ -75,7 +81,7 @@
     <div include-html="../../include/footer.html" id="footer_file"></div>
     <script src="../../Website/JavaScript/jquery-3.6.0.min.js"></script>
     <script src="../../Website/JavaScript/include-html.min.js"></script>
-    
+
     <script src="../../Website/Style/vender/js/prism.js"></script>
     <script src="../../Website/app.js"></script>
     <script src="../../Website/Style/vender/js/video-play.js" crossorigin="anonymous"></script>

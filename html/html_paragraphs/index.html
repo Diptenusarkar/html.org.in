@@ -41,15 +41,21 @@
 </head>
 
 <body>
-    <div include-html="../../include/header.html" id="header_file"></div>    
-    <div include-html="../../include/themeSwitcher.html" id="themeSwitcher_file"></div>
-    
+    <div include-html="../../include/header.html" id="header_file"></div>
+    <div class="theme__box">
+        <select id="themeSwitcher">
+            <option value="">Select One</option>
+            <option value="theme-dark">Dark</option>
+            <option value="theme-light">Light</option>
+        </select>
+    </div>
+
     <main class="main">
         <div class="navigation-link">
             <a href="../html_headings/"><i class="bi bi-chevron-double-left"></i> Previous</a>
             <a href="../html_styles/">Next <i class="bi bi-chevron-double-right"></i></a>
         </div>
-        
+
         <div class="htmlpost__box">
             <h1>HTML Paragraphs &#128204;</h1>
             <hr>
@@ -60,7 +66,8 @@
             <h2>HTML Paragraphs</h2>
             <p>
                 The HTML <code>&lt;p&gt;</code> defines a paragraph. It is a block element. <br><br>
-                A paragraph always starts with a new line, and the browser will automatically add some white space before and after the paragraph.
+                A paragraph always starts with a new line, and the browser will automatically add some white space
+                before and after the paragraph.
             </p>
             <h3>Example:-</h3>
             <pre>
@@ -73,7 +80,8 @@
             <img src="./Screenshot.png" alt="Screenshot">
             <h2>HTML Display</h2>
             <p>
-                When it comes to display, You cannot arrange them using extra space or create a new line. In short, you can not do anything in this way. <br>
+                When it comes to display, You cannot arrange them using extra space or create a new line. In short, you
+                can not do anything in this way. <br>
                 BUT! Don't worry we will fix that up in our upcoming lectures.
                 Ther is really a beautiful way to fix this. Not right now.
             </p>
@@ -97,7 +105,8 @@ eaque, dolorem architecto explicabo tempora dolores saepe
 &lt;/p&gt;
 
 </code></pre>
-            <p class="note"><span class="imp-text">Info:-</span> As you can see we create two paragraphs with a different styles. What did you think, What web page will display?</p>
+            <p class="note"><span class="imp-text">Info:-</span> As you can see we create two paragraphs with a
+                different styles. What did you think, What web page will display?</p>
             <h3>Result:-</h3>
             <img src="./Screenshot1.png" alt="Screenshot">
             <h2>HTML Line Breaks</h2>
@@ -118,7 +127,8 @@ eaque, dolorem architecto explicabo tempora dolores saepe
             </p>
             <img src="./Screenshot3.png" alt="Screenshot">
             <p class="note">
-                <span class="imp-text">Now question how we will create this. Without using <code>&lt;br&gt;</code> tag</span>
+                <span class="imp-text">Now question how we will create this. Without using <code>&lt;br&gt;</code>
+                    tag</span>
             </p>
             <h3>Solution:-</h3>
             <p>We need to use <code>&lt;pre&gt;</code> for this.</p>
@@ -167,7 +177,7 @@ eaque, dolorem architecto explicabo tempora dolores saepe
     <div include-html="../../include/footer.html" id="footer_file"></div>
     <script src="../../Website/JavaScript/jquery-3.6.0.min.js"></script>
     <script src="../../Website/JavaScript/include-html.min.js"></script>
-    
+
     <script src="../../Website/Style/vender/js/prism.js"></script>
     <script src="../../Website/app.js"></script>
     <script src="../../Website/Style/vender/js/video-play.js" crossorigin="anonymous"></script>

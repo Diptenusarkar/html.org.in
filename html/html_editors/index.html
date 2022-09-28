@@ -41,8 +41,14 @@
 </head>
 
 <body>
-    <div include-html="../../include/header.html" id="header_file"></div>    
-    <div include-html="../../include/themeSwitcher.html" id="themeSwitcher_file"></div>
+    <div include-html="../../include/header.html" id="header_file"></div>
+    <div class="theme__box">
+        <select id="themeSwitcher">
+            <option value="">Select One</option>
+            <option value="theme-dark">Dark</option>
+            <option value="theme-light">Light</option>
+        </select>
+    </div>
 
     <main class="main">
         <div class="navigation-link">
@@ -53,7 +59,8 @@
         <div class="htmlpost__box">
             <h1>HTML Editors &#128204;</h1>
             <hr>
-                <p class="htmlpost__hr-p">Hey, you only need a text editor, Then the whole world will become a canvas. Then you are good to go for HTML.</p>
+            <p class="htmlpost__hr-p">Hey, you only need a text editor, Then the whole world will become a canvas. Then
+                you are good to go for HTML.</p>
             <hr>
             <h2>About Editors</h2>
             <p>

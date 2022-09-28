@@ -41,8 +41,14 @@
 </head>
 
 <body>
-    <div include-html="../../include/header.html" id="header_file"></div>    
-    <div include-html="../../include/themeSwitcher.html" id="themeSwitcher_file"></div>
+    <div include-html="../../include/header.html" id="header_file"></div>
+    <div class="theme__box">
+        <select id="themeSwitcher">
+            <option value="">Select One</option>
+            <option value="theme-dark">Dark</option>
+            <option value="theme-light">Light</option>
+        </select>
+    </div>
 
     <main class="main">
         <div class="navigation-link">

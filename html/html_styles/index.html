@@ -41,35 +41,45 @@
 </head>
 
 <body>
-    <div include-html="../../include/header.html" id="header_file"></div>    
-    <div include-html="../../include/themeSwitcher.html" id="themeSwitcher_file"></div>
-    
+    <div include-html="../../include/header.html" id="header_file"></div>
+    <div class="theme__box">
+        <select id="themeSwitcher">
+            <option value="">Select One</option>
+            <option value="theme-dark">Dark</option>
+            <option value="theme-light">Light</option>
+        </select>
+    </div>
+
     <main class="main">
         <div class="navigation-link">
             <a href="../html_paragraphs/"><i class="bi bi-chevron-double-left"></i> Previous</a>
             <a href="../html_formatting/">Next <i class="bi bi-chevron-double-right"></i></a>
         </div>
-        
+
         <div class="htmlpost__box">
             <h1>HTML Styles &#128204;</h1>
             <hr>
             <p class="htmlpost__hr-p">
-                The HTML <code>style</code> attribute is used to add styles to an element, such as color, font, size, and more.
+                The HTML <code>style</code> attribute is used to add styles to an element, such as color, font, size,
+                and more.
             </p>
             <hr>
             <h2>Let's talk about HTML style.</h2>
             <p>
-                When it's come to an excellent looking website, we need to use some styles. We have more than 2 ways to use styles. See below for more info.
-                <ol>
-                    <li>Inline Style | We need to use <code>style="property:value;"</code></li>
-                    <li>Internal Style | We need to use <code>style</code> tage on <code>head</code>, We will talk about later</li>
-                    <li>External Style | We must create a external css file <code>style.css</code> & then we need to use <code>link</code> to add this style file.</li>
-                </ol>
+                When it's come to an excellent looking website, we need to use some styles. We have more than 2 ways to
+                use styles. See below for more info.
+            <ol>
+                <li>Inline Style | We need to use <code>style="property:value;"</code></li>
+                <li>Internal Style | We need to use <code>style</code> tage on <code>head</code>, We will talk about
+                    later</li>
+                <li>External Style | We must create a external css file <code>style.css</code> & then we need to use
+                    <code>link</code> to add this style file.</li>
+            </ol>
             </p>
             <h3>Now it's time practically apply time</h3>
             <p>
                 Let me right down a simple example.
-                    <pre>
+            <pre>
                         <code class="language-html">
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>color<span class="token punctuation">:</span>red<span class="token punctuation">;</span><span class="token punctuation">"</span><span class="token tag"><span class="token tag"><span class="token punctuation">&gt;</span></span>I am red text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token tag"><span class="token tag"><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>color<span class="token punctuation">:</span>green<span class="token punctuation">;</span><span class="token punctuation">"</span><span class="token tag"><span class="token tag"><span class="token punctuation">&gt;</span></span>I am green text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token tag"><span class="token tag"><span class="token punctuation">&gt;</span></span>
@@ -92,7 +102,8 @@
             <h3>Code preview </h3>
             <img src="./Screenshot1.png" alt="Screenshot">
             <p>
-                As you can see we change the background color of the text. if You look carefully, you will see some white space around the text. This is padding/margin witch added by the browser.
+                As you can see we change the background color of the text. if You look carefully, you will see some
+                white space around the text. This is padding/margin witch added by the browser.
                 <br> <br>
                 I think it's time to watch a video about HTML style.
             </p>
@@ -115,7 +126,7 @@
     <div include-html="../../include/footer.html" id="footer_file"></div>
     <script src="../../Website/JavaScript/jquery-3.6.0.min.js"></script>
     <script src="../../Website/JavaScript/include-html.min.js"></script>
-    
+
     <script src="../../Website/Style/vender/js/prism.js"></script>
     <script src="../../Website/app.js"></script>
     <script src="../../Website/Style/vender/js/video-play.js" crossorigin="anonymous"></script>

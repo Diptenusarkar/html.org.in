@@ -41,20 +41,26 @@
 </head>
 
 <body>
-    <div include-html="../../include/header.html" id="header_file"></div>    
-    <div include-html="../../include/themeSwitcher.html" id="themeSwitcher_file"></div>
-    
+    <div include-html="../../include/header.html" id="header_file"></div>
+    <div class="theme__box">
+        <select id="themeSwitcher">
+            <option value="">Select One</option>
+            <option value="theme-dark">Dark</option>
+            <option value="theme-light">Light</option>
+        </select>
+    </div>
+
     <main class="main">
         <div class="navigation-link">
             <a href="/"><i class="bi bi-chevron-double-left"></i> Previous</a>
             <a href="../html_editors/">Next <i class="bi bi-chevron-double-right"></i></a>
         </div>
-        
+
         <div class="htmlpost__box">
             <h1>HTML Introduction &#128204;</h1>
 
             <hr>
-                <p class="htmlpost__hr-p">HTML is the standard markup language, It looks like a skeleton for a website.</p>
+            <p class="htmlpost__hr-p">HTML is the standard markup language, It looks like a skeleton for a website.</p>
             <hr>
 
             <h2>A simple HTML structure</h2>
@@ -76,23 +82,29 @@
                 <h3>This is our code preview <i class="bi bi-arrow-down-circle"></i></h3>
                 <img src="./Screenshot1.png" alt="Screen shot">
             </div>
-            
+
             <h3>Let's talk about previous example</h3>
             <ul>
                 <li>&lt;!DOCTYPE html&gt; This is defined, This website create with HTML5</li>
                 <li>&lt;html&gt; This is a root element</li>
                 <li>&lt;head&gt; This tag is used for add website metadata and stylesheet.</li>
                 <li>&lt;title&gt; This tag is used for add website title.</li>
-                <li>&lt;body&gt; We use this tag to add visible contents. like image, paragraph, hyperlink, lists, tables, etc</li>
+                <li>&lt;body&gt; We use this tag to add visible contents. like image, paragraph, hyperlink, lists,
+                    tables, etc</li>
                 <li>&lt;h1&gt; Element defines a large heading</li>
                 <li>&lt;p&gt; Element defines a paragraph</li>
             </ul>
             <h3>Let's talk about How HTML Work & How we write. <i class="bi bi-pencil"></i></h3>
             <p>
-                Okay, Html stands for a hypertext markup language.When we work with HTML, then we really need to keep in mind that every HTML element needs an opening & closing bracket. But there is some exception there like [&lt;br&gt;,&lt;hr&gt;,&lt;img&gt;,&lt;link&gt;] etc. This is a self-closing tag.
-                <ul>
-                    <li>We need to start with &lt; this. and then we need to place your element argument, Then this tag end with &gt; let's write it together &lt;html&gt; This is an opening tag. Now it's time to close your tag using / this. Now the question is how ? So after first bracket we need to add / This. &lt;/html&gt; This is a final closing tag.</li>
-                </ul>
+                Okay, Html stands for a hypertext markup language.When we work with HTML, then we really need to keep in
+                mind that every HTML element needs an opening & closing bracket. But there is some exception there like
+                [&lt;br&gt;,&lt;hr&gt;,&lt;img&gt;,&lt;link&gt;] etc. This is a self-closing tag.
+            <ul>
+                <li>We need to start with &lt; this. and then we need to place your element argument, Then this tag end
+                    with &gt; let's write it together &lt;html&gt; This is an opening tag. Now it's time to close your
+                    tag using / this. Now the question is how ? So after first bracket we need to add / This.
+                    &lt;/html&gt; This is a final closing tag.</li>
+            </ul>
             </p>
 
             <h3>Let's talk about HTML history</h3>

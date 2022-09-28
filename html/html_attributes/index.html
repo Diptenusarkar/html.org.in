@@ -41,8 +41,14 @@
 </head>
 
 <body>
-    <div include-html="../../include/header.html" id="header_file"></div>    
-    <div include-html="../../include/themeSwitcher.html" id="themeSwitcher_file"></div>    
+    <div include-html="../../include/header.html" id="header_file"></div>
+    <div class="theme__box">
+        <select id="themeSwitcher">
+            <option value="">Select One</option>
+            <option value="theme-dark">Dark</option>
+            <option value="theme-light">Light</option>
+        </select>
+    </div>
 
     <main class="main">
         <div class="navigation-link">
@@ -69,12 +75,14 @@
             <h2>HTML Attributes</h2>
             <ul>
                 <li>All html element can have <span class="imp-text">Attributes</span></li>
-                <li>Attribute can provide some <span class="imp-text">additional information</span> About html elements</li>
+                <li>Attribute can provide some <span class="imp-text">additional information</span> About html elements
+                </li>
                 <li>Attributes usually come in name/value pairs like: <span class="imp-text">name="value"</span></li>
             </ul>
 
             <h2>Let's talk about <span class="imp-text">herf</span> tage</h2>
-            <p>The &lt;a&gt; tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:</p>
+            <p>The &lt;a&gt; tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:
+            </p>
             <pre class="language-html"><code>
 &lt;a href="https://www.html.org.in"&gt;Go to HTML.ORG.IN&lt;/a&gt;
                 </code></pre>
@@ -91,29 +99,37 @@
                 There are two ways to specify the URL in the src attribute
             </p>
             <p>
-                <span class="imp-text">1.</span> Absolute URL: <span class="imp-text">https://www.html.org.in/img-1.png</span> <br>
+                <span class="imp-text">1.</span> Absolute URL: <span
+                    class="imp-text">https://www.html.org.in/img-1.png</span> <br>
                 Now question is, how do we know that the URL is absolute? <br>
-                Absolute URL is a URL that starts with <span class="imp-text">http://</span> or <span class="imp-text">https://</span>, Links to an external image that is hosted on another website. <br> <br>
-                <span class="imp-text">Note:-</span> Maybe you don't own the copyright of the image & Then if you use this image, you may be violated copyright law.
+                Absolute URL is a URL that starts with <span class="imp-text">http://</span> or <span
+                    class="imp-text">https://</span>, Links to an external image that is hosted on another website. <br>
+                <br>
+                <span class="imp-text">Note:-</span> Maybe you don't own the copyright of the image & Then if you use
+                this image, you may be violated copyright law.
             </p> <br> <br>
             <p>
                 <span class="imp-text">2.</span> Relative URL: <span class="imp-text">./html-img/a</span> <br>
                 Now question is, What is relative URL? <br>
-                Relative URL is a URL that starts with <span class="imp-text">./</span> or <span class="imp-text">../</span>, Links to an image that is hosted on the same website. <br> <br>
-                <spna class="imp-text">Tip:-</spna> If you ask me I'll recommend you to use a relative URL. Because in the future you may want to move your website to another domain, Then your website will never break.
+                Relative URL is a URL that starts with <span class="imp-text">./</span> or <span
+                    class="imp-text">../</span>, Links to an image that is hosted on the same website. <br> <br>
+                <spna class="imp-text">Tip:-</spna> If you ask me I'll recommend you to use a relative URL. Because in
+                the future you may want to move your website to another domain, Then your website will never break.
             </p>
             <h2>
                 Let's talk about <span class="imp-text">alt</span> tage</h2>
             </h2>
             <p>
-                The &lt;img&gt; tag defines an image. The alt attribute specifies an alternate text for the image, if the image cannot be displayed:
+                The &lt;img&gt; tag defines an image. The alt attribute specifies an alternate text for the image, if
+                the image cannot be displayed:
             </p>
             <pre class="language-html"><code>
 &lt;img src="https://www.html.org.in/img-1.png" alt="HTML.ORG.IN"&gt;
                 </code></pre>
-                <p>
-                    <span class="imp-text">Note:-</span> The alt attribute is used to specify an alternate text for an image, if the image cannot be displayed.
-                </p>
+            <p>
+                <span class="imp-text">Note:-</span> The alt attribute is used to specify an alternate text for an
+                image, if the image cannot be displayed.
+            </p>
             <h2>
                 Let's talk about <span class="imp-text">title</span> tage</h2>
             </h2>
@@ -124,7 +140,8 @@
 &lt;img src="https://www.html.org.in/img-1.png" alt="HTML.ORG.IN" title="HTML.ORG.IN"&gt;
                 </code></pre>
             <p>
-                <span class="imp-text">Note:-</span> The title attribute is used to specify extra information about an image.   
+                <span class="imp-text">Note:-</span> The title attribute is used to specify extra information about an
+                image.
             </p>
             <h2>
                 Let's talk about <span class="imp-text">width</span> tage</h2>

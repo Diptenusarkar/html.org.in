@@ -41,15 +41,21 @@
 </head>
 
 <body>
-    <div include-html="../../include/header.html" id="header_file"></div>    
-    <div include-html="../../include/themeSwitcher.html" id="themeSwitcher_file"></div>
-    
+    <div include-html="../../include/header.html" id="header_file"></div>
+    <div class="theme__box">
+        <select id="themeSwitcher">
+            <option value="">Select One</option>
+            <option value="theme-dark">Dark</option>
+            <option value="theme-light">Light</option>
+        </select>
+    </div>
+
     <main class="main">
         <div class="navigation-link">
             <a href="../html_attributes/"><i class="bi bi-chevron-double-left"></i> Previous</a>
             <a href="../html_paragraphs/">Next <i class="bi bi-chevron-double-right"></i></a>
         </div>
-        
+
         <div class="htmlpost__box">
             <h1>HTML Headings &#128204;</h1>
             <hr>
@@ -60,8 +66,10 @@
             <h2>Basic knowledge</h2>
             <p>
                 HTML headings are defined by the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags. <br>
-                The <code>&lt;h1&gt;</code> tag is used for the largest heading, Also this is a most important heading<br>
-                the <code>&lt;h6&gt;</code> tag is used for the smallest heading, Also this is a less important heading<br>
+                The <code>&lt;h1&gt;</code> tag is used for the largest heading, Also this is a most important
+                heading<br>
+                the <code>&lt;h6&gt;</code> tag is used for the smallest heading, Also this is a less important
+                heading<br>
                 <br><br>
                 <span class="imp-text">Note:- </span>important for search engine optimizer(SEO)
             </p>
@@ -81,12 +89,15 @@
             <p>
                 Okay as we all know, the heading is the title of the page. <br>
                 Now maybe you have a question why so many headings are there on the web page?<br>
-                Well, when a search engine indexes a web page/website, it will index that web page according to that heading. That means that will structure and content base on the heading. So I think you understand why the heading play a big role in a website.
+                Well, when a search engine indexes a web page/website, it will index that web page according to that
+                heading. That means that will structure and content base on the heading. So I think you understand why
+                the heading play a big role in a website.
             </p>
             <p class="note">
-                <spam class="imp-text">Note:-</spam> Each HTML heading has a default size, But you can change the size using <code>font-size</code> property.
+                <spam class="imp-text">Note:-</spam> Each HTML heading has a default size, But you can change the size
+                using <code>font-size</code> property.
             </p>
-            
+
         </div>
 
         <div class="navigation-link">
@@ -98,7 +109,7 @@
     <div include-html="../../include/footer.html" id="footer_file"></div>
     <script src="../../Website/JavaScript/jquery-3.6.0.min.js"></script>
     <script src="../../Website/JavaScript/include-html.min.js"></script>
-    
+
     <script src="../../Website/Style/vender/js/prism.js"></script>
     <script src="../../Website/app.js"></script>
     <script src="../../Website/Style/vender/js/video-play.js" crossorigin="anonymous"></script>
