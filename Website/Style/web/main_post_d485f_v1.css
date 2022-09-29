@@ -42,12 +42,18 @@ a {
 
 .header .nav ol li {
     display: inline-block;
+}
+
+.header .nav ol li:not(:last-child) {
     margin-right: 2rem;
 }
 
 .header .nav ol li a {
     color: var(--color-link);
     font-size: 1.8rem;
+    background-color: var(--bg-linear-secondary);
+    padding: .5rem .8rem;
+    border-radius: .3rem;
 }
 
 .main {
