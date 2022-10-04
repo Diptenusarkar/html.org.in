@@ -65,6 +65,10 @@ code {
     color: red;
 }
 
+.color-red {
+    color: red;
+}
+
 .note {
     padding: 0 4%;
     background-color: var(--note-text-color);
