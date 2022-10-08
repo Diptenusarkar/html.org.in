@@ -38,6 +38,50 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../../favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../../favicon_io/favicon-16x16.png">
     <link rel="manifest" href="../../favicon_io/site.webmanifest">
+
+    <style>
+        .color-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* text-align: center; */
+        }
+
+        .color-box > div {
+            height: 10rem;
+            width: 20rem;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .color-box-1 {
+            background-color: red;
+        }
+
+        .color-box-2 {
+            background-color: black;
+        }
+
+        .color-box-3 {
+            background-color: brown;
+        }
+
+        .color-box-4 {
+            background-color: aqua;
+        }
+
+        .color-box-5 {
+            background-color: crimson;
+        }
+
+        .color-box-6 {
+            background-color: darkorange;
+        }
+    </style>
 </head>
 
 <body>
@@ -48,14 +92,14 @@
             <option value="theme-dark">Dark</option>
             <option value="theme-light">Light</option>
         </select>
-    </div>    
-    
+    </div>
+
     <main class="main">
         <div class="navigation-link">
             <a href="../html_comments/"><i class="bi bi-chevron-double-left"></i> Previous</a>
             <a href="#">Next <i class="bi bi-chevron-double-right"></i></a>
         </div>
-        
+
         <div class="htmlpost__box">
             <h1>HTML Colors &#128204;</h1>
             <hr>
@@ -66,9 +110,20 @@
 
             <h2>Maybe you have a question about why we need HTML Colors?</h2>
             <p>
-                Frankly, This is not necessary, When you want to create an ugly website. BUT! when you are going to create a website for your client, definitely you need to create a good looking amazing website.
+                Frankly, This is not necessary, When you want to create an ugly website. BUT! when you are going to
+                create a website for your client, definitely you need to create a good looking amazing website.
             </p>
             <h3>I think that's all that you need to know. Now we are going to describe more HTML colors.</h3>
+            <div class="color-box">
+                <div class="color-box-1">red</div>
+                <div class="color-box-2">black</div>
+                <div class="color-box-3">brown</div>
+                <div class="color-box-4">aqua</div>
+                <div class="color-box-5">crimson</div>
+                <div class="color-box-6">darkorange</div>
+            </div>
+            <h3>This is how background color looks like this <br> Now the big question is how we implement this on your web page.</h3>
+
             <h1 class="color-red">Still, under development, we'll update soon.</h1>
         </div>
 
@@ -80,7 +135,7 @@
 
 
     <div include-html="../../include/footer.html" id="footer_file"></div>
-    
+
     <script src="../../Website/Style/vender/js/prism.js"></script>
     <script src="../../Website/app.js"></script>
     <script src="../../Website/Style/vender/js/video-play.js" crossorigin="anonymous"></script>
