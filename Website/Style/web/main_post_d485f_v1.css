@@ -45,7 +45,7 @@ a {
 }
 
 .header .nav ol li:not(:last-child) {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
 }
 
 .header .nav ol li a {
