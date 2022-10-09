@@ -1,1 +1,16 @@
-/* test  */
+.header .nav ol li a {
+    font-size: 1.3rem;
+}
+
+.main__html-componentBox {
+    padding: 1rem 0.5rem;
+}
+.main__html-componentBox-textBox h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.main__html-componentBox-textBox p {
+    font-size: 1.2rem;
+    /* width: 100%; */
+}

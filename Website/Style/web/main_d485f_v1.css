@@ -92,6 +92,8 @@ li:not(:last-child) {
 
 .main__html-componentBox-logobox {
     margin-right: 1rem;
+    display: flex;
+    align-items: center;
 }
 
 .main__html-componentBox-logobox img {
