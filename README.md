@@ -1,9 +1,9 @@
 ## html.org.in is an open-source HTML learning website.
 ### So What does it mean?
-Basically, we create this website for you. You don't need to take any subscription or no need to see any unwanted ads. Even we respect your privacy, so we did not track you or we don't sell any kind of your personal data. BUT! We store only one cookie for dark/light theme.
+Basically, we created this website for you. You don't need to take any subscription and no need to see any unwanted ads. We respect your privacy, so we do not track you or we don't sell any kind of your personal data. We store only one cookie for dark/light theme.
 
 ### How will you contribute?
-Before you going to contribute, you need to know there is more than one step.
+Before you contribute, you need to know there is more than one step.
 1. **First Step** 
     - You need to create a folder on `HTML` folder.
      - Then create a folder with `html_yourname`.
@@ -12,8 +12,8 @@ Before you going to contribute, you need to know there is more than one step.
     - Copy `copy.html` file
     - Now it's your time. To make it.
   
-**Okay, it looks good. Now the question is how a add a video tutorial?** <br>
-Well, this is really very good question. For that, you need to copy this code.
+**Okay, it looks good. Now the question is how to add a video tutorial?** <br>
+Well, this is really very good question. For that, you need to copy this code:
 
 ```html
 <div class="video__plyr">
@@ -26,4 +26,4 @@ Well, this is really very good question. For that, you need to copy this code.
 </div>
 ```
 
-For more information please look into the `copy.html` file.
+For more information, please look into the `copy.html` file.
