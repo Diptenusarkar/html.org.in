@@ -13,3 +13,12 @@ function setTheme(theme) {
     localStorage.setItem('theme', theme);
     themeSwitcher.value = theme;
 }
+
+const componentBoxes = document.querySelectorAll('.main__html-componentBox')
+
+componentBoxes.forEach(componentBox => {
+    componentBox.addEventListener('click', () => {
+        let a = componentBox.lastElementChild.lastElementChild.firstElementChild
+        location.href = a.href
+    })
+})
