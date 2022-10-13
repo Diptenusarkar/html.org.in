@@ -100,6 +100,10 @@ th {
     background-color: #dddddd;
 } */
 
+.dl-item {
+    margin-left: 8rem;
+    font-size: 2rem;
+}
 .navigation-link {
     display: flex;
     align-items: center;
