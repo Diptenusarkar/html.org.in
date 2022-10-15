@@ -15,6 +15,7 @@ html {
 body {
     background-color: var(--color-bg-primary);
     color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -40,6 +41,7 @@ a {
 
 .header .nav ol li {
     display: inline-block;
+    
 }
 
 li:not(:last-child) {
@@ -50,10 +52,14 @@ li:not(:last-child) {
     color: var(--color-link);
     font-size: 1.8rem;
     background-color: var(--bg-linear-secondary);
-    padding: .5rem .8rem;
+    padding: .8rem 1.4rem;
     border-radius: .3rem;
-}
+    border-radius: 10px;
 
+}
+.header .nav ol li a:hover{
+    color: rgb(255, 140, 0);
+}
 /* .hero {
 
 } */
