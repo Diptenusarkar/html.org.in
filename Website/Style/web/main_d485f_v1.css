@@ -100,6 +100,9 @@ li:not(:last-child) {
     height: 8rem;
 }
 
+.main__html-componentBox-textBox  {
+    width: 100%;
+}
 .main__html-componentBox-textBox h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
