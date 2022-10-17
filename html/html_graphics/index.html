@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Dsky Solution v1.0.0" />
+    <meta property="og:title" content="HTML Attributes | A open source project 💖" />
+    <meta property="og:locale" content="en_IN" />
+    <meta name="description" content="HTML.ORG.IN A free platform for html learning " />
+    <meta property="og:description" content="HTML.ORG.IN A free platform for html learning " />
+    <link rel="canonical" href="https://html.org.in/" />
+    <meta property="og:url" content="https://html.org.in/" />
+    <meta property="og:site_name" content="html.org.in for html learner" />
+    <meta property="og:image" content="https://www.html.org.in/Website/assets/image/social-card.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:image" content="https://www.html.org.in/Website/assets/image/social-card.png" />
+    <meta property="twitter:title" content="html.org.in for html learner" />
+    <meta name="twitter:site" content="@diptenusarkar" />
+    <title>HTML Attributes | A open source project 💖</title>
+
+    <!-- !Stylesheet -->
+    <link rel="stylesheet" href="../../Website/Style/web/main_post_d485f_v1.css">
+    <link rel="stylesheet" href="../../Website/Style/vender/css/prism.css">
+    <link rel="stylesheet" href="../../Website/Style/vender/css/video-play.css" />
+
+    <!-- media query screen  -->
+    <link rel="stylesheet" type="text/css" media="(max-width: 320px)" href="../../media/media320.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 375px)" href="../..media/media375.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 425px)" href="../..media/media425.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 768px)" href="../..media/media768.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../../favicon_io/site.webmanifest">
+</head>
+
+<body>
+    <div include-html="../../include/header.html" id="header_file"></div>
+    <div class="theme__box">
+        <select id="themeSwitcher">
+            <option value="">Select One</option>
+            <option value="theme-dark">Dark</option>
+            <option value="theme-light">Light</option>
+        </select>
+    </div> 
+    
+    <main class="main">
+        <div class="navigation-link">
+            <a href="../html_links/"><i class="bi bi-chevron-double-left"></i> Previous</a>
+            <a href="../html_intro/">Next <i class="bi bi-chevron-double-right"></i></a>
+        </div>
+        
+        <div class="htmlpost__box">
+            <h1>HTML Graphics &#128204;</h1>
+            <hr>
+            <hr>
+            <p class="htmlpost__hr-p">
+                In this lecture, we are going to discuss about how to create Graphics in html.
+            </p>
+            <hr>
+            <p class="htmlpost__hr-p">
+             There are two modern web technologies for creating rich drawn graphics within the browser:
+             <ol>
+                    <li>Canvas</li>
+                    <li>Scalable Vector Graphics (SVG).</li>
+                </ol>
+
+                <ul class="heading">
+                   <h2><li>Canvas</li></h2></ul>
+                    <p> A hypertext markup language element introduced in HTML5 for creating and analyzing bitmap images as pixels. The Canvas specification provides a Javascript API for accessing the element's graphics context and performing drawing operations with it.  
+                     </p><br>
+
+                    <p>
+                    The HTML &lt;canvas&gt; element is used to draw graphics, on the fly, via scripting (usually JavaScript). The &lt;canvas&gt; element is only a container for graphics. You must use a script to actually draw the graphics.Canvas has several methods for drawing paths, boxes, circles, text, and adding images.
+                    </p>
+             <h3>Below is an example of Canvas Tag in html:</h3>
+             <pre style="height:200px;">
+                <code class="language-html">
+                    &lt;canvas id="myCanvas" width="200" height="100"
+                    style="border:3px solid red;"&gt;
+                    &lt;canvas&gt;
+                    
+                    &lt;canvas id="myCanvas" width="200" height="200"
+                    style="border:3px solid  grey; margin-left:15px"&gt;
+                    &lt;canvas&gt;
+                </code>
+                <img src="/html/html_graphics/html canvas op.PNG" alt="Canvas Output" style=" width:500px; margin:3%;">
+                </pre>
+                <ul class="heading">
+                    <h2><li>SVG</li></h2></ul>
+
+                    <p>HTML SVG is a modularized language which is used to describe graphics in XML. It describe two-dimensional vector and mixed vector/raster graphics in XML. It is a W3C recommendation. Since it's an  XML files, you can create and edit an SVG image with text editor, but generally drawing programs like inkspace are preferred to create it.</p><br>
+         
+                    <br><p> SVG is mostly used for vector type diagrams like pie charts, 2-Dimensional graphs in an X,Y coordinate system etc. The &lt;svg&gt; element specifies the root of a SVG fragment. You can animate every element and every attribute in SVG files.</p> <br>
+
+                    <h3>Below is an example of SVG Tag in html:</h3>
+                    <pre style="height:200px;">
+                       <code class="language-html">
+               &lt;style&gt;
+                        svg {
+                        border:2px solid red;
+                        padding:25px;
+                      }
+               &lt;/style&gt;
+                        
+                        &lt;svg width="200" height="200";&gt;
+                          &lt;polygon points="100,10 40,198 190,78 10,78 160,198"
+                          style="fill:aqua;stroke:blue;stroke-width:5;fill-rule:evenodd;"/&gt;
+                        &lt;/svg&gt;
+                    </code>
+                       <img src="/html/html_graphics/svg op.PNG" alt="SVG Output" style=" width:300px; margin:3%;">
+                       </pre>
+            </p>
+            <hr>
+        </div>
+
+        <div class="navigation-link">
+            <a href="../html_links/"><i class="bi bi-chevron-double-left"></i> Previous</a>
+            <a href="../html_intro/">Next <i class="bi bi-chevron-double-right"></i></a>
+        </div>
+    </main>
+
+    <div include-html="../../include/footer.html" id="footer_file"></div>
+    
+    <script src="../../Website/Style/vender/js/prism.js"></script>
+    <script src="../../Website/app.js"></script>
+    <script src="../../Website/Style/vender/js/video-play.js" crossorigin="anonymous"></script>
+    <script src="../../Website/JavaScript/jquery-3.6.0.min.js"></script>
+    <script src="../../Website/JavaScript/include-html.min.js"></script>
+    <script>
+        const player = new Plyr('#player');
+    </script>
+</body>
+
+</html>
