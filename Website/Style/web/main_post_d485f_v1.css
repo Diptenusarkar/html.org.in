@@ -183,8 +183,8 @@ th {
     position: fixed;
     /* top: 50%;
     transform: translateY(-50%); */
-    right: 2rem;
-    bottom: 4rem;
+    left: 2rem;
+    top: 9rem;
 }
 
 .theme__box select {
