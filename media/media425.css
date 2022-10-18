@@ -165,7 +165,9 @@
     flex-direction: column;
     padding: 0 4%;
     height: 8rem;
-    /* margin: 2rem 0; */
+    margin: 0rem;
+    z-index: 1;
+    top: 0;
 }
 
 .header .nav a {
