@@ -184,7 +184,7 @@ th {
     /* top: 50%;
     transform: translateY(-50%); */
     left: 2rem;
-    top: 9rem;
+    top: 50%;
 }
 
 .theme__box select {

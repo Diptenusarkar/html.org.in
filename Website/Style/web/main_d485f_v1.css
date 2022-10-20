@@ -136,7 +136,7 @@ li:not(:last-child) {
     position: fixed;
     /* top: 50%;
     transform: translateY(-50%); */
-    top: 9rem;
+    top: 50%;
     left: 2rem;
 }
 
