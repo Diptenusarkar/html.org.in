@@ -134,8 +134,7 @@ li:not(:last-child) {
     display: inline-block;
     margin-right: 1rem;
     position: fixed;
-    /* top: 50%;
-    transform: translateY(-50%); */
+    top: 50%;
     top: 50%;
     left: 2rem;
 }

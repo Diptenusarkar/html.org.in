@@ -28,10 +28,11 @@
 
     <!-- media query screen  -->
     <link rel="stylesheet" type="text/css" media="(max-width: 320px)" href="../../media/media320.css">
-  <link rel="stylesheet" type="text/css" media="(max-width: 375px)" href="../../media/media375.css">
-  <link rel="stylesheet" type="text/css" media="(max-width: 425px)" href="../../media/media425.css">
-  <link rel="stylesheet" type="text/css" media="(min-width:426px) and (max-width: 768px)" href="../../media/media768.css">
-  <link rel="stylesheet" type="text/css" media="(min-width: 768px)" href="../../media/media1000.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 375px)" href="../../media/media375.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 425px)" href="../../media/media425.css">
+    <link rel="stylesheet" type="text/css" media="(min-width:426px) and (max-width: 768px)"
+        href="../../media/media768.css">
+    <link rel="stylesheet" type="text/css" media="(min-width: 768px)" href="../../media/media1000.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
@@ -49,14 +50,14 @@
             <option value="theme-dark">Dark</option>
             <option value="theme-light">Light</option>
         </select>
-    </div> 
-    
+    </div>
+
     <main class="main">
         <div class="navigation-link">
             <a href="../html_links/"><i class="bi bi-chevron-double-left"></i> Previous</a>
             <a href="../html_intro/">Next <i class="bi bi-chevron-double-right"></i></a>
         </div>
-        
+
         <div class="htmlpost__box">
             <h1>HTML Graphics &#128204;</h1>
             <hr>
@@ -66,57 +67,72 @@
             </p>
             <hr>
             <p class="htmlpost__hr-p">
-             There are two modern web technologies for creating rich drawn graphics within the browser:
-             <ol>
+                There are two modern web technologies for creating rich drawn graphics within the browser:
+            <ol>
+                <li>Canvas</li>
+                <li>Scalable Vector Graphics (SVG).</li>
+            </ol>
+
+            <ul class="heading">
+                <h2>
                     <li>Canvas</li>
-                    <li>Scalable Vector Graphics (SVG).</li>
-                </ol>
+                </h2>
+            </ul>
+            <p> A hypertext markup language element introduced in HTML5 for creating and analyzing bitmap images as
+                pixels. The Canvas specification provides a Javascript API for accessing the element's graphics context
+                and performing drawing operations with it.
+            </p><br>
 
-                <ul class="heading">
-                   <h2><li>Canvas</li></h2></ul>
-                    <p> A hypertext markup language element introduced in HTML5 for creating and analyzing bitmap images as pixels. The Canvas specification provides a Javascript API for accessing the element's graphics context and performing drawing operations with it.  
-                     </p><br>
-
-                    <p>
-                    The HTML &lt;canvas&gt; element is used to draw graphics, on the fly, via scripting (usually JavaScript). The &lt;canvas&gt; element is only a container for graphics. You must use a script to actually draw the graphics.Canvas has several methods for drawing paths, boxes, circles, text, and adding images.
-                    </p>
-             <h3>Below is an example of Canvas Tag in html:</h3>
-             <pre style="height:200px;">
+            <p>
+                The HTML &lt;canvas&gt; element is used to draw graphics, on the fly, via scripting (usually
+                JavaScript). The &lt;canvas&gt; element is only a container for graphics. You must use a script to
+                actually draw the graphics.Canvas has several methods for drawing paths, boxes, circles, text, and
+                adding images.
+            </p>
+            <h3>Below is an example of Canvas Tag in html:</h3>
+            <pre style="height:200px;">
 <code class="language-html">
-                    &lt;canvas id="myCanvas" width="200" height="100"
-                    style="border:3px solid red;"&gt;
-                    &lt;canvas&gt;
+    &lt;canvas id="myCanvas" width="200" height="100" style="border:3px solid red;"&gt;
+    &lt;canvas&gt;
                     
-                    &lt;canvas id="myCanvas" width="200" height="200"
-                    style="border:3px solid  grey; margin-left:15px"&gt;
-                    &lt;canvas&gt;
+    &lt;canvas id="myCanvas" width="200" height="200" style="border:3px solid  grey; margin-left:15px"&gt;
+    &lt;canvas&gt;
 </code>
-                <img src="/html/html_graphics/html canvas op.PNG" alt="Canvas Output" style=" width:500px; margin:3%;">
-                </pre>
-                <ul class="heading">
-                    <h2><li>SVG</li></h2></ul>
+</pre>
+<img src="/html/html_graphics/html canvas op.PNG" alt="Canvas Output" style=" width:500px; margin:3%;">
+            <ul class="heading">
+                <h2>
+                    <li>SVG</li>
+                </h2>
+            </ul>
 
-                    <p>HTML SVG is a modularized language which is used to describe graphics in XML. It describe two-dimensional vector and mixed vector/raster graphics in XML. It is a W3C recommendation. Since it's an  XML files, you can create and edit an SVG image with text editor, but generally drawing programs like inkspace are preferred to create it.</p><br>
-         
-                    <br><p> SVG is mostly used for vector type diagrams like pie charts, 2-Dimensional graphs in an X,Y coordinate system etc. The &lt;svg&gt; element specifies the root of a SVG fragment. You can animate every element and every attribute in SVG files.</p> <br>
+            <p>HTML SVG is a modularized language which is used to describe graphics in XML. It describe two-dimensional
+                vector and mixed vector/raster graphics in XML. It is a W3C recommendation. Since it's an XML files, you
+                can create and edit an SVG image with text editor, but generally drawing programs like inkspace are
+                preferred to create it.</p><br>
 
-                    <h3>Below is an example of SVG Tag in html:</h3>
-                    <pre style="height:200px;">
+            <br>
+            <p> SVG is mostly used for vector type diagrams like pie charts, 2-Dimensional graphs in an X,Y coordinate
+                system etc. The &lt;svg&gt; element specifies the root of a SVG fragment. You can animate every element
+                and every attribute in SVG files.</p> <br>
+
+            <h3>Below is an example of SVG Tag in html:</h3>
+            <pre style="height:200px;">
                        <code class="language-html">
-               &lt;style&gt;
-                        svg {
-                        border:2px solid red;
-                        padding:25px;
-                      }
-               &lt;/style&gt;
+&lt;style&gt;
+    svg {
+    border:2px solid red;
+    padding:25px;
+    };
+&lt;/style&gt;
                         
-                        &lt;svg width="200" height="200";&gt;
-                          &lt;polygon points="100,10 40,198 190,78 10,78 160,198"
-                          style="fill:aqua;stroke:blue;stroke-width:5;fill-rule:evenodd;"/&gt;
-                        &lt;/svg&gt;
+&lt;svg width="200" height="200";&gt;
+    &lt;polygon points="100,10 40,198 190,78 10,78 160,198"
+    style="fill:aqua;stroke:blue;stroke-width:5;fill-rule:evenodd;"/&gt;
+&lt;/svg&gt;
                     </code>
-                       <img src="/html/html_graphics/svg op.PNG" alt="SVG Output" style=" width:300px; margin:3%;">
-                       </pre>
+                </pre>
+                <img src="/html/html_graphics/svg op.PNG" alt="SVG Output" style=" width:300px; margin:3%;">
             </p>
             <hr>
         </div>
@@ -128,7 +144,7 @@
     </main>
 
     <div include-html="../../include/footer.html" id="footer_file"></div>
-    
+
     <script src="../../Website/Style/vender/js/prism.js"></script>
     <script src="../../Website/app.js"></script>
     <script src="../../Website/Style/vender/js/video-play.js" crossorigin="anonymous"></script>
