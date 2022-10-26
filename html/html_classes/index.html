@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Dsky Solution v1.0.0" />
+    <meta property="og:title" content="HTML Basic | A open source project 💖" />
+    <meta property="og:locale" content="en_IN" />
+    <meta name="description" content="HTML.ORG.IN A free platform for html learning " />
+    <meta property="og:description" content="HTML.ORG.IN A free platform for html learning " />
+    <link rel="canonical" href="https://html.org.in/" />
+    <meta property="og:url" content="https://html.org.in/" />
+    <meta property="og:site_name" content="html.org.in for html learner" />
+    <meta property="og:image" content="https://www.html.org.in/Website/assets/image/social-card.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:image" content="https://www.html.org.in/Website/assets/image/social-card.png" />
+    <meta property="twitter:title" content="html.org.in for html learner" />
+    <meta name="twitter:site" content="@diptenusarkar" />
+
+    <title>HTML Classes | A open source project 💖</title>
+
+    <!-- !Stylesheet -->
+    <link rel="stylesheet" href="../../Website/Style/web/main_post_d485f_v1.css">
+    <link rel="stylesheet" href="../../Website/Style/vender/css/prism.css">
+
+    <!-- media query screen  -->
+    <link rel="stylesheet" type="text/css" media="(max-width: 320px)" href="../../media/media320.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 375px)" href="../../media/media375.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 425px)" href="../../media/media425.css">
+    <link rel="stylesheet" type="text/css" media="(min-width:426px) and (max-width: 768px)"
+        href="../../media/media768.css">
+    <link rel="stylesheet" type="text/css" media="(min-width: 768px)" href="../../media/media1000.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../../favicon_io/site.webmanifest">
+
+    <style>
+        .animal {
+          background-color: black;
+          color: yellow;
+          border: 2px solid white;
+          margin: 20px;
+          padding: 20px;
+        }
+        .mammal {
+            background-color: black;
+            color: yellow;
+            padding: 20px;
+          } 
+          
+          .oviparous {
+            text-align: center;
+          }
+
+          .animal2 {
+            background-color: black;
+            color: yellow;
+            padding: 10px;
+          }
+        </style>
+</head>
+
+<body>
+    <div include-html="../../include/header.html" id="header_file"></div>
+    <div class="theme__box">
+        <select id="themeSwitcher">
+            <option value="">Select One</option>
+            <option value="theme-dark">Dark</option>
+            <option value="theme-light">Light</option>
+        </select>
+    </div>
+
+    <main class="main">
+        <div class="navigation-link">
+            <a href="../html_colors/"><i class="bi bi-chevron-double-left"></i> Previous</a>
+            <a href="../html_forms/">Next <i class="bi bi-chevron-double-right"></i></a>
+        </div>
+
+        <div class="htmlpost__box">
+            <h1>HTML Classes &#128204;</h1>
+            <hr>
+            <p class="htmlpost__hr-p">
+                HTML classes allow web developers to define blueprint and create and modify all elements which are formed from a given blueprint.
+            </p>
+            <hr>
+            <h2>Let's talk about the class attribute</h2>
+            <p>The class attribute serves the purpose of linking the html element to the logic (JavaScript) and the style sheet.
+                We can access and modify the elements by referencing the class name defined in the class attribute.
+            </p>
+            <h3>Example</h3>
+            <p>In the following example we have three &lt;div&gt; elements with a class attribute with the value of "animal". 
+                All of the three &lt;div&gt; elements will be styled equally according to the .animal style:</p>
+            <pre class="language-html">
+   <code>
+&lt;div class = "animal"&gt;
+    &lt;h2&gt;Dog&lt;&sol;h2&gt;
+    &lt;p&gt;Dogs are good.&lt;&sol;p&gt;
+&lt;&sol;div&gt;
+
+&lt;div class = "animal"&gt;
+    &lt;h2&gt;Cat&lt;&sol;h2&gt;
+    &lt;p&gt;Cats are not good.&lt;&sol;p&gt;
+&lt;&sol;div&gt;
+   </code>
+</pre>
+<pre class="language-html">
+    <code>
+ &lt;style&gt;
+    .animal {
+        background-color: black;
+        color: yellow;
+        border: 2px solid white;
+        margin: 20px;
+        padding: 20px;
+    }
+ &lt;&sol;style&gt;
+    </code>
+ </pre>
+<h3>Result: </h3>
+            <div class="animal">
+                <h2>Dog</h2>
+                <p>Dogs are good.</p>
+            </div>
+
+            <div class="animal">
+                <h2>Cat</h2>
+                <p>Cats are not good.</p>
+            </div>
+            
+            <p>The class attribute can be used on any HTML element. The class name is case sensitive!</p>
+
+            <h2>Syntax for Classes</h2>
+            <p>To create a class; write a period (.) character, followed by a class name. Then, define the CSS properties within curly braces {}</p>
+
+            <h2>Multiple Classes</h2>
+            <p>HTML elements can belong to more than one class. To define multiple classes, separate the class names with a space, e.g. &lt;< class="mammal oviparous">&gt;. The element will be styled according to all the classes specified.</p>
+            <h3>Example</h3><p>
+            In the following example, the first &lt;<h3>&gt; element belongs to both the "mammal" class and also to the "oviparous" class, and will get the style from both of the classes: 
+            </p>
+
+            <pre class="language-html">
+                <code>
+&lt;h3 class = "mammal oviparous"&gt; 
+    Platypus 
+&lt;&sol;h3&gt;
+&lt;h3 class = "mammal"&gt;
+    Dogs
+&lt;&sol;h3&gt;
+&lt;h3 class = "oviparous"&gt;
+    Frogs
+&lt;&sol;h3&gt;
+   </code>
+</pre>
+<pre class="language-html">
+    <code>
+ &lt;style&gt;
+    .mammal {
+       background-color: black;
+       color: yellow;
+       padding: 20px;
+     } 
+     
+     .oviparous {
+       text-align: center;
+     }
+ &lt;&sol;style&gt;
+                 </code>
+              </pre>
+             <h3>Result: </h3>
+             <h3 class="mammal oviparous">Platypus</h3>
+             <h3 class="mammal">Dogs</h3>
+             <h3 class="oviparous">Frogs</h3>
+
+            <h2>Same class can be shared by different elements</h2>
+            <h3>Example</h3>
+            <pre class="language-html">
+                <code>
+&lt;h1 class = "animal"&gt; 
+    Whale
+&lt;&sol;h1&gt;
+&lt;h2 class = "animal"&gt;
+    Elephant
+&lt;&sol;h2&gt;
+&lt;p class = "animal"&gt;
+    Fox
+&lt;&sol;p&gt;
+&lt;h5 class = "animal"&gt;
+    Ant
+&lt;&sol;h5&gt;
+   </code>
+</pre>
+<pre class="language-html">
+    <code>
+ &lt;style&gt;
+ .animal {
+    background-color: black;
+    color: yellow;
+    padding: 10px;
+  } 
+ &lt;&sol;style&gt;
+                 </code>
+              </pre>
+             <h3>Result: </h3>
+             <h1 class="animal2">Whale</h1>
+             <h2 class="animal2">Elephant</h2>
+             <p class="animal2">Fox</p><br>
+             <h5 class="animal2">Ant</h5>
+
+            <h3 style="text-decoration: none;">
+                That's all for this lesson, see you next one.
+            </h3>
+        </div>
+
+        <div class="navigation-link">
+            <a href="../html_graphics/"><i class="bi bi-chevron-double-left"></i> Previous</a>
+            <a href="../html_intro/">Next <i class="bi bi-chevron-double-right"></i></a>
+        </div>
+    </main>
+
+    <div include-html="../../include/footer.html" id="footer_file"></div>
+    <script src="../../Website/JavaScript/jquery-3.6.0.min.js"></script>
+    <script src="../../Website/JavaScript/include-html.min.js"></script>
+
+    <script src="../../Website/Style/vender/js/prism.js"></script>
+    <script src="../../Website/app.js"></script>
+</body>
+
+</html>
