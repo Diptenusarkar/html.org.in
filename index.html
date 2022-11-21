@@ -46,15 +46,15 @@
 </head>
 
 <body>
-    <div include-html="include/header.html" id="header_file"></div>
+    <!-- <div include-html="include/header.html" id="header_file"></div> -->
     <!-- <div include-html="include/themeSwitcher.html" id="themeSwitcher_file"></div> -->
-    <div class="theme__box">
+    <!-- <div class="theme__box">
         <select id="themeSwitcher">
             <option value="">Select One</option>
             <option value="theme-dark">Dark</option>
             <option value="theme-light">Light</option>
         </select>
-    </div>
+    </div> -->
     <!-- <header class="header">
         <nav class="nav">
             <a href="/" class="logo__top">HTML.ORG.IN</a>
@@ -86,6 +86,40 @@
             <option value="theme-light">Light</option>
         </select>
     </div> -->
+
+    <header class="header">      
+        <nav class="menu-wrap nav">
+            <a href="/" class="logo__top" style="color:#ff6d00;"><i class="bi bi-filetype-html"></i> HTML.ORG.IN </a>
+            <input type="checkbox" class="toggler">
+    
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu">
+                <div>
+                    <ol>
+                        <li><a href="/"><i class="bi bi-house-door"></i> Home</a></li>
+                        <li><a href="#"><i class="bi bi-bag-plus"></i> Tool</a></li>
+                        <li><a href="https://github.com/Diptenusarkar/html.org.in/"><i class="bi bi-github"></i> Edit
+                            </a>
+                        </li>
+                        <li><a href="https://github.com/sponsors/Diptenusarkar"><i class="bi bi-cash-stack"></i> Sponsor
+                            </a>
+                        </li>
+                        <li>
+                            <div class="theme__box">
+                                <select id="themeSwitcher">
+                                    <option value="">Select One</option>
+                                    <option value="theme-dark">Dark</option>
+                                    <option value="theme-light">Light</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <main class="main">
         <section class="main__html-component">
