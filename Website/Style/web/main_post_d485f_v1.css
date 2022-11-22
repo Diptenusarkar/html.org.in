@@ -179,7 +179,7 @@ th {
     z-index: 99999999;
     display: inline-block;
     margin-right: 1rem;
-    position: fixed;
+    /* position: fixed; */
     left: 2rem;
     top: 50%;
 }
