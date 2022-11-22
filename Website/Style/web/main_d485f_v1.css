@@ -133,7 +133,7 @@ li:not(:last-child) {
     z-index: 99999999;
     display: inline-block;
     margin-right: 1rem;
-    /* position: fixed; */
+    position: fixed;
     top: 50%;
     top: 50%;
     left: 2rem;
