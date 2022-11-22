@@ -87,7 +87,36 @@
 </head>
 
 <body>
-    <div include-html="../../include/header.html" id="header_file"></div>
+    <header class="header">
+        <nav class="menu-wrap nav">
+            <a href="/" class="logo__top" style="color:#ff6d00;"><i class="bi bi-filetype-html"></i> HTML.ORG.IN </a>
+            <input type="checkbox" class="toggler">
+
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ol>
+                            <li>
+                                <div include-html="../../include/navlink.html" id="navlink_file"></div>
+                            </li>
+                            <li>
+                                <div class="theme__box">
+                                    <select id="themeSwitcher">
+                                        <option value="">Select One</option>
+                                        <option value="theme-dark">Dark</option>
+                                        <option value="theme-light">Light</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!-- <div class="theme__box">
         <select id="themeSwitcher">
             <option value="">Select One</option>
@@ -125,14 +154,42 @@
                 <div class="color-box-6">darkorange</div>
             </div>
             <h3>This is how background color looks like this <br> Now the big question is how we implement this on your
-            web page.</h3>
+                web page.</h3>
             <pre>
                 <code class="language-CSS">
 background-color: darkorange;
             </code></pre>
-            <p>Okay, I think this is not enough to describe how we can write our CSS style. <br> First, we need a defined which HTML element we are going to style, For that we need to create some class & id (should not be repeated) even though we can style by selecting an HTML element. </p>
+            <p>Okay, I think this is not enough to describe how we can write our CSS style. <br> First, we need a
+                defined which HTML element we are going to style, For that we need to create some class & id (should not
+                be repeated) even though we can style by selecting an HTML element. </p>
 
-            <h1 class="color-red">Still, under development, we'll update soon.</h1>
+            <h2>Text Color :-</h2>
+            <p>
+            <p style="color:Tomato;">Hello World</p>
+            <p style="color:DodgerBlue;">Lorem ipsum...</p>
+            <p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+            </p>
+            <h3>Example </h3>
+            <pre>
+                <code class="language-html">
+&lt;p style="color:Tomato;"&gt;Hello World&lt;/p&gt;
+&lt;p style="color:DodgerBlue;"&gt;Lorem ipsum...&lt;/p&gt;
+&lt;p style="color:MediumSeaGreen;"&gt;Ut wisi enim...&lt;/p&gt;</code>
+            </pre>
+            <h2>Border Color :-</h2>
+            <p>
+            <h1 style="border:2px solid Tomato;">Hello World</h1>
+            <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+            <h1 style="border:2px solid Violet;">Hello World</h1>
+            </p>
+            <h3>Example </h3>
+            <pre>
+                <code class="language-html">
+&lt;h1 style="border:2px solid Tomato;"&gt;Hello World&lt;/h1&gt;
+&lt;h1 style="border:2px solid DodgerBlue;"&gt;Hello World&lt;/h1&gt;
+&lt;h1 style="border:2px solid Violet;"&gt;Hello World&lt;/h1&gt;</code>
+            </pre>
+            <!-- <h1 class="color-red">Still, under development, we'll update soon.</h1> -->
         </div>
 
         <div class="navigation-link">

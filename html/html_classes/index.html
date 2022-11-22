@@ -43,32 +43,62 @@
 
     <style>
         .animal {
-          background-color: black;
-          color: yellow;
-          border: 2px solid white;
-          margin: 20px;
-          padding: 20px;
+            background-color: black;
+            color: yellow;
+            border: 2px solid white;
+            margin: 20px;
+            padding: 20px;
         }
+
         .mammal {
             background-color: black;
             color: yellow;
             padding: 20px;
-          } 
-          
-          .oviparous {
-            text-align: center;
-          }
+        }
 
-          .animal2 {
+        .oviparous {
+            text-align: center;
+        }
+
+        .animal2 {
             background-color: black;
             color: yellow;
             padding: 10px;
-          }
-        </style>
+        }
+    </style>
 </head>
 
 <body>
-    <div include-html="../../include/header.html" id="header_file"></div>
+    <header class="header">
+        <nav class="menu-wrap nav">
+            <a href="/" class="logo__top" style="color:#ff6d00;"><i class="bi bi-filetype-html"></i> HTML.ORG.IN </a>
+            <input type="checkbox" class="toggler">
+
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ol>
+                            <li>
+                                <div include-html="../../include/navlink.html" id="navlink_file"></div>
+                            </li>
+                            <li>
+                                <div class="theme__box">
+                                    <select id="themeSwitcher">
+                                        <option value="">Select One</option>
+                                        <option value="theme-dark">Dark</option>
+                                        <option value="theme-light">Light</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!-- <div class="theme__box">
         <select id="themeSwitcher">
             <option value="">Select One</option>
@@ -87,15 +117,18 @@
             <h1>HTML Classes &#128204;</h1>
             <hr>
             <p class="htmlpost__hr-p">
-                HTML classes allow web developers to define blueprint and create and modify all elements which are formed from a given blueprint.
+                HTML classes allow web developers to define blueprint and create and modify all elements which are
+                formed from a given blueprint.
             </p>
             <hr>
             <h2>Let's talk about the class attribute</h2>
-            <p>The class attribute serves the purpose of linking the html element to the logic (JavaScript) and the style sheet.
+            <p>The class attribute serves the purpose of linking the html element to the logic (JavaScript) and the
+                style sheet.
                 We can access and modify the elements by referencing the class name defined in the class attribute.
             </p>
             <h3>Example</h3>
-            <p>In the following example we have three &lt;div&gt; elements with a class attribute with the value of "animal". 
+            <p>In the following example we have three &lt;div&gt; elements with a class attribute with the value of
+                "animal".
                 All of the three &lt;div&gt; elements will be styled equally according to the .animal style:</p>
             <pre class="language-html">
    <code>
@@ -110,7 +143,7 @@
 &lt;&sol;div&gt;
    </code>
 </pre>
-<pre class="language-html">
+            <pre class="language-html">
     <code>
  &lt;style&gt;
     .animal {
@@ -123,7 +156,7 @@
  &lt;&sol;style&gt;
     </code>
  </pre>
-<h3>Result: </h3>
+            <h3>Result: </h3>
             <div class="animal">
                 <h2>Dog</h2>
                 <p>Dogs are good.</p>
@@ -133,19 +166,25 @@
                 <h2>Cat</h2>
                 <p>Cats are not good.</p>
             </div>
-            
+
             <p>The class attribute can be used on any HTML element. The class name is case sensitive!</p>
 
             <h2>Syntax for Classes</h2>
-            <p>To create a class; write a period (.) character, followed by a class name. Then, define the CSS properties within curly braces {}</p>
+            <p>To create a class; write a period (.) character, followed by a class name. Then, define the CSS
+                properties within curly braces {}</p>
 
             <h2>Multiple Classes</h2>
-            <p>HTML elements can belong to more than one class. To define multiple classes, separate the class names with a space, e.g. &lt;< class="mammal oviparous">&gt;. The element will be styled according to all the classes specified.</p>
-            <h3>Example</h3><p>
-            In the following example, the first &lt;<h3>&gt; element belongs to both the "mammal" class and also to the "oviparous" class, and will get the style from both of the classes: 
-            </p>
+            <p>HTML elements can belong to more than one class. To define multiple classes, separate the class names
+                with a space, e.g. &lt;< class="mammal oviparous">&gt;. The element will be styled according to all the
+                    classes specified.</p>
+            <h3>Example</h3>
+            <p>
+                In the following example, the first &lt;
+            <h3>&gt; element belongs to both the "mammal" class and also to the "oviparous" class, and will get the
+                style from both of the classes:
+                </p>
 
-            <pre class="language-html">
+                <pre class="language-html">
                 <code>
 &lt;h3 class = "mammal oviparous"&gt; 
     Platypus 
@@ -158,7 +197,7 @@
 &lt;&sol;h3&gt;
    </code>
 </pre>
-<pre class="language-html">
+                <pre class="language-html">
     <code>
  &lt;style&gt;
     .mammal {
@@ -173,14 +212,14 @@
  &lt;&sol;style&gt;
                  </code>
               </pre>
-             <h3>Result: </h3>
-             <h3 class="mammal oviparous">Platypus</h3>
-             <h3 class="mammal">Dogs</h3>
-             <h3 class="oviparous">Frogs</h3>
+                <h3>Result: </h3>
+                <h3 class="mammal oviparous">Platypus</h3>
+                <h3 class="mammal">Dogs</h3>
+                <h3 class="oviparous">Frogs</h3>
 
-            <h2>Same class can be shared by different elements</h2>
-            <h3>Example</h3>
-            <pre class="language-html">
+                <h2>Same class can be shared by different elements</h2>
+                <h3>Example</h3>
+                <pre class="language-html">
                 <code>
 &lt;h1 class = "animal"&gt; 
     Whale
@@ -196,7 +235,7 @@
 &lt;&sol;h5&gt;
    </code>
 </pre>
-<pre class="language-html">
+                <pre class="language-html">
     <code>
  &lt;style&gt;
  .animal {
@@ -207,15 +246,15 @@
  &lt;&sol;style&gt;
                  </code>
               </pre>
-             <h3>Result: </h3>
-             <h1 class="animal2">Whale</h1>
-             <h2 class="animal2">Elephant</h2>
-             <p class="animal2">Fox</p><br>
-             <h5 class="animal2">Ant</h5>
+                <h3>Result: </h3>
+                <h1 class="animal2">Whale</h1>
+                <h2 class="animal2">Elephant</h2>
+                <p class="animal2">Fox</p><br>
+                <h5 class="animal2">Ant</h5>
 
-            <h3 style="text-decoration: none;">
-                That's all for this lesson, see you next one.
-            </h3>
+                <h3 style="text-decoration: none;">
+                    That's all for this lesson, see you next one.
+                </h3>
         </div>
 
         <div class="navigation-link">

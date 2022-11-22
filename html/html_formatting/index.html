@@ -28,10 +28,11 @@
 
 	<!-- media query screen  -->
 	<link rel="stylesheet" type="text/css" media="(max-width: 320px)" href="../../media/media320.css">
-    <link rel="stylesheet" type="text/css" media="(max-width: 375px)" href="../../media/media375.css">
-    <link rel="stylesheet" type="text/css" media="(max-width: 425px)" href="../../media/media425.css">
-    <link rel="stylesheet" type="text/css" media="(min-width:426px) and (max-width: 768px)" href="../../media/media768.css">
-    <link rel="stylesheet" type="text/css" media="(min-width: 768px)" href="../../media/media1000.css">
+	<link rel="stylesheet" type="text/css" media="(max-width: 375px)" href="../../media/media375.css">
+	<link rel="stylesheet" type="text/css" media="(max-width: 425px)" href="../../media/media425.css">
+	<link rel="stylesheet" type="text/css" media="(min-width:426px) and (max-width: 768px)"
+		href="../../media/media768.css">
+	<link rel="stylesheet" type="text/css" media="(min-width: 768px)" href="../../media/media1000.css">
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
 
@@ -42,7 +43,36 @@
 </head>
 
 <body>
-	<div include-html="../../include/header.html" id="header_file"></div>
+	<header class="header">
+		<nav class="menu-wrap nav">
+			<a href="/" class="logo__top" style="color:#ff6d00;"><i class="bi bi-filetype-html"></i> HTML.ORG.IN </a>
+			<input type="checkbox" class="toggler">
+
+			<div class="hamburger">
+				<div></div>
+			</div>
+			<div class="menu">
+				<div>
+					<div>
+						<ol>
+							<li>
+								<div include-html="../../include/navlink.html" id="navlink_file"></div>
+							</li>
+							<li>
+								<div class="theme__box">
+									<select id="themeSwitcher">
+										<option value="">Select One</option>
+										<option value="theme-dark">Dark</option>
+										<option value="theme-light">Light</option>
+									</select>
+								</div>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
 	<!-- <div class="theme__box">
 		<select id="themeSwitcher">
 			<option value="">Select One</option>

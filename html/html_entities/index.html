@@ -43,7 +43,36 @@
 </head>
 
 <body>
-    <div include-html="../../include/header.html" id="header_file"></div>
+    <header class="header">
+        <nav class="menu-wrap nav">
+            <a href="/" class="logo__top" style="color:#ff6d00;"><i class="bi bi-filetype-html"></i> HTML.ORG.IN </a>
+            <input type="checkbox" class="toggler">
+
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ol>
+                            <li>
+                                <div include-html="../../include/navlink.html" id="navlink_file"></div>
+                            </li>
+                            <li>
+                                <div class="theme__box">
+                                    <select id="themeSwitcher">
+                                        <option value="">Select One</option>
+                                        <option value="theme-dark">Dark</option>
+                                        <option value="theme-light">Light</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!-- <div class="theme__box">
         <select id="themeSwitcher">
             <option value="">Select One</option>
@@ -62,61 +91,62 @@
             <h1>HTML Entities &#128204;</h1>
             <hr>
             <p class="htmlpost__hr-p">
- HTML Entities are representation of different varieties of characters, assigning icons, mathematical operators, 
+                HTML Entities are representation of different varieties of characters, assigning icons, mathematical
+                operators,
             </p>
-        <h2>Basics HTML Entities.</h2>
-        <table>
-            <tr>
-                <th>Tag</th>
-                <th>representation and useage</th>
-            </tr>
+            <h2>Basics HTML Entities.</h2>
+            <table>
+                <tr>
+                    <th>Tag</th>
+                    <th>representation and useage</th>
+                </tr>
 
-            <tr>
-                <td>&nbsp;</td>
-                <td>
-                   namespace tag (&nbps;)
-                </td>
-            </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        namespace tag (&nbps;)
+                    </td>
+                </tr>
 
-            <tr>
-                <td>&lt</td>
-                <td>Less than (& lt;)</td>
-            </tr>
+                <tr>
+                    <td>&lt</td>
+                    <td>Less than (& lt;)</td>
+                </tr>
 
-            <tr>
-                <td>&gt;</td>
-                <td>Greater than (& gt;)</td>
-            </tr>
+                <tr>
+                    <td>&gt;</td>
+                    <td>Greater than (& gt;)</td>
+                </tr>
 
-            <tr>
-                <td>&amp;</td>
-                <td>Amphersand (& amp;)</td>
-            </tr>
+                <tr>
+                    <td>&amp;</td>
+                    <td>Amphersand (& amp;)</td>
+                </tr>
 
-            <tr>
-                <td>&quot;</td>
-                <td>Double quotation mark (& quot;)</td>
-            </tr>
+                <tr>
+                    <td>&quot;</td>
+                    <td>Double quotation mark (& quot;)</td>
+                </tr>
 
-            <tr>
-                <td>&apos;</td>
-                <td>apostrophe (& apos;) </td>
-            </tr>
+                <tr>
+                    <td>&apos;</td>
+                    <td>apostrophe (& apos;) </td>
+                </tr>
 
-            <tr>
-                <td>&pound;</td>
-                <td>Pound Symbol (& pound;)</td>
-            </tr>
+                <tr>
+                    <td>&pound;</td>
+                    <td>Pound Symbol (& pound;)</td>
+                </tr>
 
-            <tr>
-                <td>&copy;</td>
-                <td>Copyright (& copy;)</td>
-            </tr>
+                <tr>
+                    <td>&copy;</td>
+                    <td>Copyright (& copy;)</td>
+                </tr>
 
-           
-        </table>
-        <h3>Try them out to make text more beautiful.</h3>
-    </div>
+
+            </table>
+            <h3>Try them out to make text more beautiful.</h3>
+        </div>
 
         <div class="navigation-link">
             <a href="../html_classes/"><i class="bi bi-chevron-double-left"></i> Previous</a>
