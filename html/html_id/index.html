@@ -19,7 +19,7 @@
     <meta property="twitter:image" content="https://www.html.org.in/Website/assets/image/social-card.png" />
     <meta property="twitter:title" content="html.org.in for html learner" />
     <meta name="twitter:site" content="@diptenusarkar" />
-    <title>HTML Attributes | A open source project 💖</title>
+    <title>HTML Id | A open source project 💖</title>
 
     <!-- !Stylesheet -->
     <link rel="stylesheet" href="../../Website/Style/web/main_post_d485f_v1.css">
@@ -83,12 +83,12 @@
 
     <main class="main">
         <div class="navigation-link">
-            <a href="#"><i class="bi bi-chevron-double-left"></i> Previous</a>
-            <a href="#">Next <i class="bi bi-chevron-double-right"></i></a>
+            <a href="../html_entities/"><i class="bi bi-chevron-double-left"></i> Previous</a>
+            <a href="../html_iframe/">Next <i class="bi bi-chevron-double-right"></i></a>
         </div>
 
         <div class="htmlpost__box">
-            <h1>HTML Id &#128204;</h1>
+            <h1 id="myId">HTML Id &#128204;</h1>
             <hr>
             <p class="htmlpost__hr-p">
                 The HTML id attribute is used to specify a unique id for an HTML element.
@@ -98,12 +98,72 @@
             <h2>Using The id</h2>
             <p>
                 Ther is some point we need to know about <span style="color: red;">ID</span>
+
+                <ol>
+                    <li>We can use this for one single and particular element. We can't use it twice.</li>
+                    <li>ID Specificity is 1,0,0 (This is hight). In order to replace it we can use an <span style="color: red;">!important</span></li>
+                    <li>The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}.</li>
+                    <li>In the following example, we have an &lt;h1&gt; element that points to the id name "myId". This &lt;h1&gt; element will be styled according to the #myId style definition in the head section:</li>
+                </ol>
             </p>
+            <h3>Example:</h3>
+            <pre>
+                <code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;style&gt;
+            #myId {
+                background-color: lightblue;
+                color: black;
+                padding: 40px;
+                text-align: center;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1 id="myId"&gt;My Id test&lt;/h1&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code>
+            </pre>
+            <h2>Result:</h2>
+            <h1 style="background-color: lightblue; color: black; padding: 40px; text-align: center;">My Id test</h1>
+            <h2>Difference Between Class and ID 👇🏾</h2>
+            <p>
+                A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:
+            </p>
+            <h2>HTML Bookmarks with ID and Links</h2>
+            <ol>
+                <li>HTML bookmarks are used to allow readers to jump to specific parts of a webpage.</li>
+                <li>can be useful if your page is very long.</li>
+                <li>To use a bookmark, you must first create it, and then add a link to it.</li>
+                <li>Then, when the link is clicked, the page will scroll to the location with the bookmark.</li>
+            </ol>
+            <h3>Example:</h3>
+            <pre>
+                <code class="language-html">
+&lt;h2 id="myId"&gt;Go to page header&lt;/h2&gt;</code>
+            </pre>
+            <h2>Result:</h2>
+            <a href="#myId" style="font-size: 2rem; text-decoration: none;">Go to page header</a>
+            <h2>HTML Id Summary ✨</h2>
+            <p>
+                <ul>
+                    <li>The id attribute is used to specify a unique id for an HTML element</li>
+                    <li>The value of the id attribute must be unique within the HTML document</li>
+                    <li>The id attribute is used by CSS and JavaScript to style/select a specific element</li>
+                    <li>The value of the id attribute is case sensitive</li>
+                    <li>The id attribute is also used to create HTML bookmarks</li>
+                </ul>
+            </p>
+
         </div>
 
         <div class="navigation-link">
-            <a href="#"><i class="bi bi-chevron-double-left"></i> Previous</a>
-            <a href="#">Next <i class="bi bi-chevron-double-right"></i></a>
+            <a href="../html_entities/"><i class="bi bi-chevron-double-left"></i> Previous</a>
+            <a href="../html_iframe/">Next <i class="bi bi-chevron-double-right"></i></a>
         </div>
     </main>
 
