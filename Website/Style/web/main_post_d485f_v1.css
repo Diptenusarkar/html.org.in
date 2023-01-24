@@ -269,7 +269,7 @@ img {
 /* =========================================== */
 
 .footer {
-    height: 16rem;
+    height: 18rem;
     margin-top: 5rem;
     background: linear-gradient(94.23deg,#5374fa 12.41%,#fd9179 52.55%,#ff6969 89.95%);
 }
@@ -314,7 +314,7 @@ img {
 }
 
 .footer__app-link a img {
-    height: 6rem;
+    height: 5rem;
 }
 
 /* Let's get this party started */
