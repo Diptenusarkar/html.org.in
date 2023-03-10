@@ -239,3 +239,10 @@ li:not(:last-child) {
 ::-webkit-scrollbar-thumb:window-inactive {
 	background: linear-gradient(95deg, var(--bg-linear-primary), var(--bg-linear-secondary));
 }
+
+/* meadi screen for 1024px or above  */
+@media screen and (min-width: 1441px) and (max-width: 4000px) {
+    .main{
+        margin: 12rem 40rem 0 40rem;
+    }
+}
