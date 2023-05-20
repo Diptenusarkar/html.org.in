@@ -30,7 +30,5 @@ fetch('https://ipapi.co/json/')
                 redirectUrl = 'https://world.html.org.in';
         }
 
-        if (window.location.href !== redirectUrl) {
-            window.location.href = redirectUrl;
-        }
+        window.location.href = redirectUrl;
     });
