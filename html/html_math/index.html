@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Dsky Solution v1.0.0" />
-    <meta property="og:title" content="HTML Attributes | A open source project 💖" />
+    <meta property="og:title" content="HTML Basic | A open source project 💖" />
     <meta property="og:locale" content="en_IN" />
     <meta name="description" content="HTML.ORG.IN A free platform for html learning " />
     <meta property="og:description" content="HTML.ORG.IN A free platform for html learning " />
@@ -19,12 +19,12 @@
     <meta property="twitter:image" content="https://www.html.org.in/Website/assets/image/social-card.png" />
     <meta property="twitter:title" content="html.org.in for html learner" />
     <meta name="twitter:site" content="@diptenusarkar" />
-    <title>HTML File Paths | A open source project 💖</title>
+
+    <title>HTML List | A open source project 💖</title>
 
     <!-- !Stylesheet -->
     <link rel="stylesheet" href="../../Website/Style/web/main_post_d485f_v1.css">
     <link rel="stylesheet" href="../../Website/Style/vender/css/prism.css">
-    <link rel="stylesheet" href="../../Website/Style/vender/css/video-play.css" />
 
     <!-- media query screen  -->
     <link rel="stylesheet" type="text/css" media="(max-width: 320px)" href="../../Website/media_query/media320.css">
@@ -87,77 +87,85 @@
 
     <main class="main">
         <div class="navigation-link">
-            <a href="../html_js/"><i class="bi bi-chevron-double-left"></i> Previous</a>
-            <a href="../html_math/">Next <i class="bi bi-chevron-double-right"></i></a>
+            <a href="../html_file_path/"><i class="bi bi-chevron-double-left"></i> Previous</a>
+            <a href="#">Next <i class="bi bi-chevron-double-right"></i></a>
         </div>
 
         <div class="htmlpost__box">
-            <h1>HTML File Paths  &#128204;</h1>
+            <h1>HTML MathML &lt;math&gt; &#128204;</h1>
             <hr>
             <p class="htmlpost__hr-p">
-                A file path describes the location of a file in a web site's foldwe structure.
-            </p>
+                MathML is intended to facilitate the use and re-use of mathematical and scientific content on the Web.
+                The MathML &lt;math&gt; tag in HTML5 is the most prioritized element. Whatever MathML element you want to use should be wrapped inside of the &lt;math&gt; tag.            </p>
             <hr>
 
-            <h1>HTML File paths</h1>
-            <p>A file path describs the location of a file in a web site's folder structure.</p>
-            <p>File paths are used when linking to external file, like:</p>
-            <ol>
-                <li>Web pages.</li>
-                <li>Images</li>
-                <li>Style sheets</li>
-                <li>JS(JavaScript)</li>
-            </ol>
-            <div class="note">
-                <p>Ther is two types of HTML File Paths.</p>
-                <ol>
-                    <li>Absolut File Paths</li>
-                    <p class="color-red">When we are going to use Absolut file then we need to give full URL <br><br></p>
-                    <li>Relative File Paths</li>
-                    <p class="color-red">A relative file path points to a file relative to the current page.</p>
-                </ol>
-            </div>
-            <h2>Take a look on this example 👇🏿</h2>
-            <br><br><br>
-            <h3>Relative file path Example</h3>
-            <pre>
-                <code class="language-html">
-&lt;img src="./flower.jpg" alt="Relative Image Preview" height="500px"&gt;</code>
-            </pre>
-            <h3>Preview</h3>
-            <img src="./flower.jpg" alt="Relative Image Preview" height="500px">
-            <a href="https://pixabay.com/images/id-7922648/" target="_blank" style="font-size: 2rem; color: inherit;">Picture Downlode from Pixabay</a>
-            <p>This picture will display from This html.org.in website Server.</p>
-            <br><br><br>
-            <!-- =================================================== -->
-            <h3>Absolut file path Example</h3>
-            <pre>
-                <code class="language-html">
-&lt;img src="https://pixabay.com/images/id-7997033/" alt="Absolut Image Preview" height="500px"&gt;</code>
-            </pre>
-            <h3>Preview</h3>
-            <img src="https://pixabay.com/images/id-7997033/" alt="Absolut Image Preview" height="500px">
-            <a href="https://pixabay.com/images/id-7997033/" target="_blank" style="font-size: 2rem; color: inherit;">Picture Downlode from Pixabay</a>
-            <p>This picture will display from This Pixabay Server.</p>
-            
-        </div>
+            <h3>Attributes: The tag accepts some attributes which are listed below: 
+
+            </h3>
+            <ul>
+                <li><b>class|id|style:</b> This attribute is used to hold the styles of the child elements.
+                </li>
+                <li><b>dir:</b> This attributes holds the direction value. It holds two types of direction values ltr for left to right and rtl for right to left.
+                </li>
+                <li><b>href:</b> This attribute is used to hold any hyperlink to a specified URL.
+                </li>
+                <li><b>mathbackground:</b> This attribute holds the value of the math expressions background color.
+                </li>
+                <li><b>mathcolor:</b> This attribute holds the color of the math expressions.
+                </li>
+                <li><b>display:</b> This attribute holds the value of rendering of HTML element. There can be two value block which means that this element will be displayed outside the current span of text, inline which means that this element will be displayed inside the current span of text.
+                </li>
+                <li><b>overflow:</b> It holds the value how the expression will behave. The default value is the linebreak and other possible values are scroll, elide, truncate, and scale.
+                </li>
+                <li><b>mode:</b>
+                     Express the display attribute, possible values are display and inline.
+                </li>
+            </ul>
+
+            <pre class="language-html">
+   <code>
+
+    &lt;h3&gt;HTML5 MathML math tag&lt;/h3&gt;
+
+    &lt;math&gt;
+        &lt;mrow&gt;
+            &lt;mrow&gt;
+                &lt;msup&gt;
+                    &lt;mi&gt;x&lt;/mi&gt;
+                    &lt;mn&gt;2&lt;/mn&gt;
+                &lt;/msup&gt;
+                &lt;mo&gt;+&lt;/mo&gt;
+                &lt;msup&gt;
+                    &lt;mi&gt;y&lt;/mi&gt;
+                    &lt;mn&gt;2&lt;/mn&gt;
+                &lt;/msup&gt;
+            &lt;/mrow&gt;
+            &lt;mo&gt;=&lt;/mo&gt;
+            &lt;msup&gt;
+                &lt;mi&gt;z&lt;/mi&gt;
+                &lt;mn&gt;2&lt;/mn&gt;
+            &lt;/msup&gt;
+        &lt;/mrow&gt;
+    &lt;/math&gt;
+
+
+   </code>
+</pre>
+   
+           
 
         <div class="navigation-link">
-            <a href="../html_js/"><i class="bi bi-chevron-double-left"></i> Previous</a>
-            <a href="../html_math/">Next <i class="bi bi-chevron-double-right"></i></a>
+            <a href="../html_file_path/"><i class="bi bi-chevron-double-left"></i> Previous</a>
+            <a href="#">Next <i class="bi bi-chevron-double-right"></i></a>
         </div>
     </main>
 
     <div include-html="../../include/post__footer.html" id="footer_file"></div>
+    <script src="../../Website/JavaScript/jquery-3.6.0.min.js"></script>
+    <script src="../../Website/JavaScript/include-html.min.js"></script>
 
     <script src="../../Website/Style/vender/js/prism.js"></script>
     <script src="../../Website/app.js"></script>
-    <script src="../../Website/Style/vender/js/video-play.js" crossorigin="anonymous"></script>
-    <script src="../../Website/JavaScript/jquery-3.6.0.min.js"></script>
-    <script src="../../Website/JavaScript/include-html.min.js"></script>
-    <script>
-        const player = new Plyr('#player');
-    </script>
 </body>
 
 </html>
