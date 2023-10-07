@@ -47,8 +47,12 @@ a {
 li:not(:last-child) {
     margin-right: 2rem;
 }
-
+#class2{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
 .header .nav ol li a {
+    
     color: var(--color-link);
     font-size: 1.8rem;
     background-color: var(--bg-linear-secondary);
@@ -120,16 +124,29 @@ li:not(:last-child) {
     /* width: 100%; */
 }
 
-.main__html-componentBox-textBox p a {
+.btn{
     color: inherit;
     background: linear-gradient(95deg, var(--bg-linear-secondary), var(--bg-linear-primary));
+    /* background-color: grey; */
     padding: 1rem 1.5rem;
     display: inline-block;
-    margin-top: 1rem;
-    border-radius: .4rem;
-    width: 100%;
+    color: white;
+    font-size: 19px;
+    margin: 0;
+    margin-top: 25px;
+    height: 40px;
+    padding-top: 6px;
+    width: 69%;
+    border-radius: 10px;
+    
 }
-
+.btn a{
+    color: rgb(194, 188, 188);
+}
+.btn a:hover{
+    
+    color: rgb(255, 0, 0);
+}
 .theme__box {
     z-index: 99999999;
     display: inline-block;
