@@ -45,3 +45,18 @@
 .footer {
     height: 16rem;
 }
+
+.about_heading{
+  margin-top: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  font-size: 3rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.about_explain{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
