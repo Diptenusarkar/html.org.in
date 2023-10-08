@@ -25,6 +25,7 @@
     <!-- !Stylesheet -->
     <link rel="stylesheet" href="../../Website/Style/web/main_post_d485f_v1.css">
     <link rel="stylesheet" href="../../Website/Style/vender/css/prism.css">
+    <link rel="stylesheet" href="../../Website/Style/vender/css/video-play.css" />
 
     <!-- media query screen  -->
     <link rel="stylesheet" type="text/css" media="(max-width: 320px)" href="../../Website/media_query/media320.css">
@@ -99,6 +100,19 @@
                 The MathML &lt;math&gt; tag in HTML5 is the most prioritized element. Whatever MathML element you want
                 to use should be wrapped inside of the &lt;math&gt; tag. </p>
             <hr>
+            <h2>Tutorial</h2>
+            <p class="htmlpost__hr-p">
+                In this lecture, we are going to talk about HTML iframe
+            </p>
+            <hr>
+            <div class="video__plyr">
+                <video id="player" playsinline controls crossorigin data-poster="./cdn/poster/images.jpeg">
+                    <!-- <source src="./cdn/video/Codes - 360.mp4" type="video/mp4" size="360" /> -->
+                    <!-- <source src="./cdn/video/HTML - IFrames 720p.mp4" type="video/mp4" size="576" /> -->
+                    <source src="./cdn/video/HTML - maths 720p.mp4" type="video/mp4" size="720" />
+                    <!-- <source src="./cdn/video/codes - 1080.mp4" type="video/mp4" size="1080" /> -->
+                </video>
+            </div>
 
             <h3>Attributes: The tag accepts some attributes which are listed below:
 
@@ -171,6 +185,10 @@
 
     <script src="../../Website/Style/vender/js/prism.js"></script>
     <script src="../../Website/app.js"></script>
+    <script src="../../Website/Style/vender/js/video-play.js" crossorigin="anonymous"></script>
+    <script>
+        const player = new Plyr('#player');
+    </script>
 </body>
 
 </html>
