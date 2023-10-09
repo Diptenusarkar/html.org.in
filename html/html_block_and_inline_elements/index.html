@@ -19,7 +19,7 @@
     <meta property="twitter:image" content="https://www.html.org.in/Website/assets/image/social-card.png" />
     <meta property="twitter:title" content="html.org.in for html learner" />
     <meta name="twitter:site" content="@diptenusarkar" />
-    <title>HTML Entities | A open source project 💖</title>
+    <title>HTML Attributes | A open source project 💖</title>
 
     <!-- !Stylesheet -->
     <link rel="stylesheet" href="../../Website/Style/web/main_post_d485f_v1.css">
@@ -40,6 +40,29 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../../favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../../favicon_io/favicon-16x16.png">
     <link rel="manifest" href="../../favicon_io/site.webmanifest">
+
+    <style>
+        
+        .result1 {
+            background-color: black;
+            color: yellow;
+            padding: 20px;
+            border: 3px solid white;
+        }
+
+        .result2 {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            border: 3px solid white;
+            font-size: 1.9rem;
+            /* font-weight: 100; */
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: 1.4px;
+            color: yellow;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -87,74 +110,103 @@
 
     <main class="main">
         <div class="navigation-link">
-            <a href="../html_block_and_inline_elements/"><i class="bi bi-chevron-double-left"></i> Previous</a>
-            <a href="../html_id/">Next <i class="bi bi-chevron-double-right"></i></a>
+            <a href="../html_classes/"><i class="bi bi-chevron-double-left"></i> Previous</a>
+            <a href="../html_entities/">Next <i class="bi bi-chevron-double-right"></i></a>
         </div>
 
         <div class="htmlpost__box">
-            <h1>HTML Entities &#128204;</h1>
+            <h1>HTML BLOCK AND INLINE ELEMENTS &#128204;</h1>
             <hr>
             <p class="htmlpost__hr-p">
-                HTML Entities are representation of different varieties of characters, assigning icons, mathematical
-                operators,
+                In HTML, there are two basic categories of HTML elements namely:
+                <ul>
+                    <li>BLOCK LEVEL ELEMENTS</li>
+                    <li>INLINE ELEMENTS</li>
+                </ul>
             </p>
-            <h2>Basics HTML Entities.</h2>
-            <table>
-                <tr>
-                    <th>Tag</th>
-                    <th>representation and useage</th>
-                </tr>
+            <hr>
+            <h2>BLOCK LEVEL ELEMENTS</h2>
+            <p>Block-level elements are elements in HTML (Hypertext Markup Language) that are used to structure the content of a web page into blocks or sections. These elements create a "block" that typically starts on a new line and extends to the full width of their containing element, which is usually the parent element.</p>
 
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>
-                        namespace tag (&nbps;)
-                    </td>
-                </tr>
+            <br>
 
-                <tr>
-                    <td>&lt</td>
-                    <td>Less than (& lt;)</td>
-                </tr>
+            <h3>Here are some common block-level elements in HTML:</h3>
 
-                <tr>
-                    <td>&gt;</td>
-                    <td>Greater than (& gt;)</td>
-                </tr>
+           <pre>
+                <code class="language-html">
+                    &lt;div&gt;   &lt;p&gt;   &lt;form&gt;  &lt;li&gt;  &lt;ul&gt;   &lt;main&gt;  &lt;section&gt; 
+                    &lt;nav&gt;  &lt;hr&gt;  &ltarticle&gt;  &lt;header&gt;  &lt;footer&gt;  &lt;br&gt;  &lt;figure&gt; 
+                    &lt;ol&gt;  &lt;figcation&gt;  &lt;pre&gt;  &lt;aside&gt;  &lt;dl&gt;  &lt;dd&gt;  &lt;figcaption&gt; 
+                    &lt;h1&gt;-&lt;h6&gt;
+                </code>
+           </pre>
+           
+            <h3>Example:</h3>
+            <p>Let's take the <code>&lt;div&gt;</code> and <code>&lt;p&gt;</code> elements:</p>
+            
+            <pre>
+                <code class="language-html">
+                    &lt;div&gt;This is a Dog&lt;/div&gt;
+                    &lt;p&gt;This is a Cat&lt;/p&gt;
+                </code>
+            </pre>
 
-                <tr>
-                    <td>&amp;</td>
-                    <td>Amphersand (& amp;)</td>
-                </tr>
+            <h3>Results:</h3>
+           <div class="result1">
+                <p>
+                    This is a Dog
+                </p>
+                <br>
+                <p>
+                    This is a Cat
+                </p>
+           </div>
+           <br>
+           <p style="margin-top: 20px;">
+            The <code>&lt;div&gt;</code> and <code>&lt;p&gt;</code> elements are block-level elements, and they consistently begin on a new line while occupying the entire available width, extending to both the left and right edges.
+           </p>
+           <br>
+           <br>
+           <br>
+            <h2>INLINE ELEMENTS</h2>
+            <p>Inline elements in HTML are elements that do not create a new block-level box within the document's flow but instead flow within the content of a block-level element or other inline-level elements. They typically only take up as much width as necessary to contain their content and do not force a new line to start after them. Inline elements are used for formatting and styling parts of text or other inline-level elements within a block-level context.</p>
+            <h3>Here are the inline elements in HTML:</h3>
+            <pre>
+                <code class="language-html">
+                    &lt;a&gt;  &lt;b&gt;  &lt;strong&gt;  &lt;i&gt;  &lt;span&gt;  &lt;em&gt;  
+                    &lt;small&gt;  &lt;code&gt;  &lt;abbr&gt;  &lt;button&gt;  &lt;img&gt  
+                    &lt;input&gt;  &lt;output&gt;  &lt;sub&gt;  &lt;sup&gt;  &lt;textarea&gt;  
+                    &lt;map&gt;  &lt;time&gt;  &lt;script&gt;  &lt;select&gt;   &lt;label&gt;  &lt;big&gt;   
+                </code>
+            </pre>
 
-                <tr>
-                    <td>&quot;</td>
-                    <td>Double quotation mark (& quot;)</td>
-                </tr>
+            <h3>Example:</h3>
 
-                <tr>
-                    <td>&apos;</td>
-                    <td>apostrophe (& apos;) </td>
-                </tr>
+            <p>Let's take the <code>&lt;i&gt;</code> and <code>&lt;strong&gt;</code> elements:</p>
 
-                <tr>
-                    <td>&pound;</td>
-                    <td>Pound Symbol (& pound;)</td>
-                </tr>
+            <pre>
+                <code class="language-html ">
+                    Hello my name is&lt;i&gt;Johnn Doe&lt;/i&gt;and i am &lt;strong&gt;38 years old&lt;/strong&gt; 
+                </code>
+            </pre>
 
-                <tr>
-                    <td>&copy;</td>
-                    <td>Copyright (& copy;)</td>
-                </tr>
+            <h3>Results:</h3>
+           <div class="result2">
+             Hello my name is  <i>Johnn Doe</i> and i am <strong style="font-weight: 100px;">38 years old</strong>
+           </div>
 
+           <div class="note">
+                <h3>Take Note:</h3>
+                <p><strong>An inline element cannot contain a block-level element</strong></p>
+           </div>
 
-            </table>
-            <h3>Try them out to make text more beautiful.</h3>
+           <h3 style="margin: 20px;">That's all for this lesson, see you next one.</h3>
+            
         </div>
 
         <div class="navigation-link">
-            <a href="../html_block_and_inline_elements/"><i class="bi bi-chevron-double-left"></i> Previous</a>
-            <a href="../html_id/">Next <i class="bi bi-chevron-double-right"></i></a>
+            <a href="../html_classes/"><i class="bi bi-chevron-double-left"></i> Previous</a>
+            <a href="../html_entities/">Next <i class="bi bi-chevron-double-right"></i></a>
         </div>
     </main>
 
