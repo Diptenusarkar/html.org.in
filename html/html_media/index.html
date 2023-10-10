@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Dsky Solution v1.0.0" />
-    <meta property="og:title" content="HTML Editors | A open source project 💖" />
+    <meta property="og:title" content="HTML Elements | A open source project 💖" />
     <meta property="og:locale" content="en_IN" />
     <meta name="description" content="HTML.ORG.IN A free platform for html learning " />
     <meta property="og:description" content="HTML.ORG.IN A free platform for html learning " />
@@ -20,7 +20,7 @@
     <meta property="twitter:title" content="html.org.in for html learner" />
     <meta name="twitter:site" content="@diptenusarkar" />
 
-    <title>HTML Editors | A open source project 💖</title>
+    <title>HTML Elements | A open source project 💖</title>
 
     <!-- !Stylesheet -->
     <link rel="stylesheet" href="../../Website/Style/web/main_post_d485f_v1.css">
@@ -87,94 +87,70 @@
 
     <main class="main">
         <div class="navigation-link">
-            <a href="../html_editors/"><i class="bi bi-chevron-double-left"></i> Previous</a>
-            <a href="../html_basic/">Next <i class="bi bi-chevron-double-right"></i></a>
+            <a href="../html_acessibility/"><i class="bi bi-chevron-double-left"></i> Previous</a>
+            <a href="../html_intro/">Next <i class="bi bi-chevron-double-right"></i></a>
         </div>
 
         <div class="htmlpost__box">
-            <h1>VSCode Extensions For HTML &#128204;</h1>
+            <h1>Media &#128204;</h1>
             <hr>
-            <p class="htmlpost__hr-p">Hey, In previous section you have learned about what are text editors and how you
-                can use them
-                as well as which text editor is best for you, Now we will get to know that what basically extensions are
-                and how
-                they integrate with VSCode and increase our productivity
+            <p class="htmlpost__hr-p">
+                Media elements in HTML enrich web content by allowing the integration of audio, video, and external content. They enhance user engagement and interactivity.
             </p>
             <hr>
-            <h2>About Extensions</h2>
+            <h2>Audio (Using &lt;audio&gt;)</h2>
             <p>
-                In a very simple way, Extensions in text editors are nothing but a way to extends the functionality of
-                our text editor.
-                As here we are working on VSCode so we can learn about how do we use extensions in vscode.
+                The &lt;audio&gt; element enables you to embed audio content like music or podcasts. You can specify the audio source using the "src" attribute and customize playback controls.
+                <br>
+                Example:
+                <pre class="language-html">
+<code>
+        &lt;audio src="music.mp3" controls&gt;&lt;/audio&gt;
+        </code>
+                </pre>
             </p>
-
-            <h2>How To Use Extensions</h2>
+            <h2>Video (Using &lt;video&gt;)</h2>
             <p>
-                To use extension in our VSCode editor we need to download them inside our VSCode and then install them,
-                after that
-                we will good to go to use them.
+                The &lt;video&gt; element seamlessly embeds videos into webpages. It supports various formats (e.g., MP4, WebM) for broader compatibility. Customize playback controls, dimensions, and multiple source formats.
+                <br>
+                Example:
+                <pre class="language-html">
+<code>
+        &lt;video width="640" height="360" controls&gt;
+            &lt;source src="video.mp4" type="video/mp4"&gt;
+            &lt;source src="video.webm" type="video/webm"&gt;
+            Your browser does not support the video tag.
+        &lt;/video&gt;
+        </code>
+                </pre>
             </p>
-
-            <h2>Where To Find Extensions</h2>
+            <h2>Embedding YouTube Videos</h2>
             <p>
-                VSCode provides their own <a href="https://marketplace.visualstudio.com/VSCode"
-                    target="_blank">marketplace</a> to download extensions for free.
-                OR you can download them directly from your VSCode, see the below image
-            <div>
-                <img src="./vscode_marketplace.jpg" alt="Download img" height="700">
-            </div>
+                Use an &lt;iframe&gt; element with the YouTube video URL to easily embed and play YouTube videos on your website.
+                <br>
+                Example:
+                <pre class="language-html">
+<code>
+        &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+</code>
+                </pre>
             </p>
-
-            <h2>Must have VSCode Extensions for HTML</h2>
+            <h2>Plugins</h2>
             <p>
-            <h3>1. Live Server</h3>
-
-            <p>Live server is a vscode extension which helps you to see the changes instantly on browser once you hit
-                save on your vscode, you do not need to save changes and go to browser and hit refresh, it will be
-                automatically
-                refresh by browser once you install and start this extension.
-                <br>
-                <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"
-                    target="_blank">Download / guide from market place</a>
+                Plugins extend the functionality of web browsers. Common examples include Flash and Java applets, although their usage has decreased over time due to security concerns and evolving web standards.
             </p>
-
-            <br>
-            <h3>2. Auto Close Tag</h3>
-
-            <p>Auto Close Tag is an extensions which solves your problem to open or close tags explicitly, now you just
-                need to open the tag and it wil close automatically with the help of this extension
-                <br>
-                <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag"
-                    target="_blank">Download / guide from market place</a>
+            <h2>Enhancing User Experience</h2>
+            <p>
+                HTML media elements and plugins empower web developers to create interactive, multimedia-rich experiences, making web content more engaging and appealing to users.
             </p>
-
-            <br>
-            <h3>3. HTML CSS Support</h3>
-
-            <p>Html Css support is an extension which helps you to auto complete your id and class names in your
-                html elements.
-                <br>
-                <a href="https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css"
-                    target="_blank">Download / guide from market place</a>
-            </p>
-            <br>
-            <h3>4. HTML Preview</h3>
-
-            <p>An extension to preview HTML files while editing them in VSCode
-                <br>
-                <a href="https://marketplace.visualstudio.com/items?itemName=george-alisson.html-preview-vscode"
-                    target="_blank">Download / guide from market place</a>
-            </p>
-
-            <br>
-            </p>
-
-
         </div>
+        
+        
+        
 
         <div class="navigation-link">
-            <a href="../html_editors/"><i class="bi bi-chevron-double-left"></i> Previous</a>
-            <a href="../html_basic/">Next <i class="bi bi-chevron-double-right"></i></a>
+            <a href="../html_acessibility/"><i class="bi bi-chevron-double-left"></i> Previous</a>
+            <a href="../html_intro/">Next <i class="bi bi-chevron-double-right"></i></a>
         </div>
     </main>
 
