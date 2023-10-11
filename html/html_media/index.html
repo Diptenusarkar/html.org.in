@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Dsky Solution v1.0.0" />
-    <meta property="og:title" content="HTML Attributes | A open source project 💖" />
+    <meta property="og:title" content="HTML Elements | A open source project 💖" />
     <meta property="og:locale" content="en_IN" />
     <meta name="description" content="HTML.ORG.IN A free platform for html learning " />
     <meta property="og:description" content="HTML.ORG.IN A free platform for html learning " />
@@ -19,12 +19,12 @@
     <meta property="twitter:image" content="https://www.html.org.in/Website/assets/image/social-card.png" />
     <meta property="twitter:title" content="html.org.in for html learner" />
     <meta name="twitter:site" content="@diptenusarkar" />
-    <title>HTML Acessibility | A open source project 💖</title>
+
+    <title>HTML Elements | A open source project 💖</title>
 
     <!-- !Stylesheet -->
     <link rel="stylesheet" href="../../Website/Style/web/main_post_d485f_v1.css">
     <link rel="stylesheet" href="../../Website/Style/vender/css/prism.css">
-    <link rel="stylesheet" href="../../Website/Style/vender/css/video-play.css" />
 
     <!-- media query screen  -->
     <link rel="stylesheet" type="text/css" media="(max-width: 320px)" href="../../Website/media_query/media320.css">
@@ -87,77 +87,73 @@
 
     <main class="main">
         <div class="navigation-link">
-            <a href="../html_math/"><i class="bi bi-chevron-double-left"></i> Previous</a>
-            <a href="../html_media/">Next <i class="bi bi-chevron-double-right"></i></a>
+            <a href="../html_acessibility/"><i class="bi bi-chevron-double-left"></i> Previous</a>
+            <a href="../html_intro/">Next <i class="bi bi-chevron-double-right"></i></a>
         </div>
 
         <div class="htmlpost__box">
-            <h1>Acessibility for HTML &#128204;</h1>
+            <h1>Media &#128204;</h1>
             <hr>
             <p class="htmlpost__hr-p">
-                Having accessible websites is crucial for inclusivity, legal compliance, a broader audience, improved
-                user experience, SEO benefits, ethical responsibility, reputation, and future-proofing.
+                Media elements in HTML enrich web content by allowing the integration of audio, video, and external content. They enhance user engagement and interactivity.
             </p>
             <hr>
-            <h2>Did you know?</h2>
-            <ul>
-                <li>96.8% of homepages had detectable WCAG 2 failures.</li>
-                <li>15% of the world's population has some sort of disability.</li>
-                <li>62% of adults with a disability own a laptop or desktop computer compared to 81% of adults without a
-                    disability.
-                </li>
-                <li>
-                    According to the Web AIM Million Report researching one million websites, the number of detectable
-                    accessibility errors was 50.8 on average per home page. This was a minor improvement from 51.4
-                    errors
-                    one year ago.
-                </li>
-            </ul>
+            <h2>Audio (Using &lt;audio&gt;)</h2>
             <p>
-                <a href="https://ddiy.co/web-accessibility-statistics/" target="_blank">source of information</a>
+                The &lt;audio&gt; element enables you to embed audio content like music or podcasts. You can specify the audio source using the "src" attribute and customize playback controls.
+                <br>
+                Example:
+                <pre class="language-html">
+        &lt;audio src="music.mp3" controls&gt;&lt;/audio&gt;
+                </pre>
             </p>
-            <hr>
-            <h2>How to start creating accessible web apps?</h2>
+            <h2>Video (Using &lt;video&gt;)</h2>
             <p>
-                To begin creating accessible websites, start by familiarizing yourself with the Web Content
-                Accessibility Guidelines (WCAG), a comprehensive set of standards for web accessibility. Adopt
-                accessible design principles and coding practices from the outset, focusing on factors like clear and
-                organized content, keyboard navigation, alternative text for images, and semantic HTML markup. Regularly
-                test your website using accessibility evaluation tools and, crucially, seek feedback from individuals
-                with disabilities to identify and address specific issues. Make accessibility an integral part of your
-                web development process, ensuring that new content and features are accessible and that ongoing
-                maintenance includes accessibility updates.
+                The &lt;video&gt; element seamlessly embeds videos into webpages. It supports various formats (e.g., MP4, WebM) for broader compatibility. Customize playback controls, dimensions, and multiple source formats.
+                <br>
+                Example:
+                <pre class="language-html">
+        &lt;video width="640" height="360" controls&gt;
+            &lt;source src="video.mp4" type="video/mp4"&gt;
+            &lt;source src="video.webm" type="video/webm"&gt;
+            Your browser does not support the video tag.
+        &lt;/video&gt;
+                </pre>
             </p>
-            <hr>
-            <h2>Read the WCAG and learn best practices</h2>
-            <p>Below is the link to the WCAG guidelines with all the information to build a more accessible web</p>
+            <h2>Embedding YouTube Videos</h2>
             <p>
-                <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">WCAG Overview - Acessibility
-                    guidelines</a>
+                Use an &lt;iframe&gt; element with the YouTube video URL to easily embed and play YouTube videos on your website.
+                <br>
+                Example:
+                <pre class="language-html">
+        &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+                </pre>
             </p>
-
-            <br>
-            <br>
-            <p style="font-size: medium;">Let's improve our code and make the web more inclusive and accessible for
-                everyone ❤️</p>
+            <h2>Plugins</h2>
+            <p>
+                Plugins extend the functionality of web browsers. Common examples include Flash and Java applets, although their usage has decreased over time due to security concerns and evolving web standards.
+            </p>
+            <h2>Enhancing User Experience</h2>
+            <p>
+                HTML media elements and plugins empower web developers to create interactive, multimedia-rich experiences, making web content more engaging and appealing to users.
+            </p>
         </div>
+        
+        
+        
 
         <div class="navigation-link">
-            <a href="../html_math/"><i class="bi bi-chevron-double-left"></i> Previous</a>
-            <a href="../html_media/">Next <i class="bi bi-chevron-double-right"></i></a>
+            <a href="../html_acessibility/"><i class="bi bi-chevron-double-left"></i> Previous</a>
+            <a href="../html_intro/">Next <i class="bi bi-chevron-double-right"></i></a>
         </div>
     </main>
 
     <div include-html="../../include/post__footer.html" id="footer_file"></div>
+    <script src="../../Website/JavaScript/jquery-3.6.0.min.js"></script>
+    <script src="../../Website/JavaScript/include-html.min.js"></script>
 
     <script src="../../Website/Style/vender/js/prism.js"></script>
     <script src="../../Website/app.js"></script>
-    <script src="../../Website/Style/vender/js/video-play.js" crossorigin="anonymous"></script>
-    <script src="../../Website/JavaScript/jquery-3.6.0.min.js"></script>
-    <script src="../../Website/JavaScript/include-html.min.js"></script>
-    <script>
-        const player = new Plyr('#player');
-    </script>
 </body>
 
 </html>
