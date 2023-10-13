@@ -23,8 +23,9 @@ This section descibes how to add a new tutorial to the website.
     - `copy.html` contains the basic structure that topic webpages follow in this project. It includes the HTML code for the metadata, header, footer and navigation buttons.
     - Edit the `<main>` element to add your tutorial content to the webpage.
     - Note that there are two `<div class="navigation-link">` elements within `<main>`. These two `<div>` elements contain the navigation buttons.
-
-**Adding a video to the topic page**  
+6. After creating the 'index.html' page of yours,add the links of previous file and next file to your html page inside `<div class="navigation-link">`.
+7. 
+   **Adding a video to the topic page**  
 If you would like to add a video to the topic's webpage, see the code below:
 
 ```html
