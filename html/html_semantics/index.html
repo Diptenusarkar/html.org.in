@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Dsky Solution v1.0.0" />
-    <meta property="og:title" content="HTML Elements | A open source project 💖" />
+    <meta property="og:title" content="HTML Attributes | A open source project 💖" />
     <meta property="og:locale" content="en_IN" />
     <meta name="description" content="HTML.ORG.IN A free platform for html learning " />
     <meta property="og:description" content="HTML.ORG.IN A free platform for html learning " />
@@ -19,12 +19,12 @@
     <meta property="twitter:image" content="https://www.html.org.in/Website/assets/image/social-card.png" />
     <meta property="twitter:title" content="html.org.in for html learner" />
     <meta name="twitter:site" content="@diptenusarkar" />
-
-    <title>HTML Elements | A open source project 💖</title>
+    <title>HTML Attributes | A open source project 💖</title>
 
     <!-- !Stylesheet -->
     <link rel="stylesheet" href="../../Website/Style/web/main_post_d485f_v1.css">
     <link rel="stylesheet" href="../../Website/Style/vender/css/prism.css">
+    <link rel="stylesheet" href="../../Website/Style/vender/css/video-play.css" />
 
     <!-- media query screen  -->
     <link rel="stylesheet" type="text/css" media="(max-width: 320px)" href="../../Website/media_query/media320.css">
@@ -87,79 +87,49 @@
 
     <main class="main">
         <div class="navigation-link">
-            <a href="../html_acessibility/"><i class="bi bi-chevron-double-left"></i> Previous</a>
-            <a href="../html_semantics/">Next <i class="bi bi-chevron-double-right"></i></a>
+            <a href="../html_media/"><i class="bi bi-chevron-double-left"></i> Previous</a>
+            <a href="../html_intro/">Next <i class="bi bi-chevron-double-right"></i></a>
         </div>
 
         <div class="htmlpost__box">
-            <h1>Media &#128204;</h1>
+            <h1>HTML Semantics  &#128204;</h1>
             <hr>
             <p class="htmlpost__hr-p">
-                Media elements in HTML enrich web content by allowing the integration of audio, video, and external content. They enhance user engagement and interactivity.
-            </p>
+                HTML semantics refers to the meaning or purpose of the elements used in an HTML document. It is important to use semantic HTML to improve the accessibility and search engine optimization (SEO) of your website. Here is a basic tutorial on HTML semantics:
+
+                <ul>
+                  <li>Use semantic tags: HTML5 introduced several new semantic tags such as <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code>, and <code>&lt;footer&gt;</code>. These tags provide a clear indication of the purpose of the content within them. For example, the <code>&lt;header&gt;</code> tag is used to define the header of a document or section, while the <code>&lt;nav&gt;</code> tag is used to define a set of navigation links.</li>
+            
+                  <li>Use headings: Headings (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>) are used to define the structure of a document. They provide a clear hierarchy of the content and help users to understand the main topics of the page.</li>
+            
+                  <li>Use lists: Lists (<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, and <code>&lt;dl&gt;</code>) are used to group related content together. They provide a clear structure to the content and make it easier to read and understand.</li>
+            
+                  <li>Use alt text: Alt text is used to describe the content of an image for users who cannot see it. It is important to use descriptive alt text to improve the accessibility of your website.</li>
+            
+                  <li>Use tables for tabular data: Tables (<code>&lt;table&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code>) are used to display tabular data. It is important to use the correct table structure to ensure that the data is presented in a clear and accessible way.</li>
+                </ul>
+            
+                I hope this helps you understand the basics of HTML semantics.
+              </p>
             <hr>
-            <h2>Audio (Using &lt;audio&gt;)</h2>
-            <p>
-                The &lt;audio&gt; element enables you to embed audio content like music or podcasts. You can specify the audio source using the "src" attribute and customize playback controls.
-                <br>
-                Example:
-                <pre class="language-html">
-<code>
-        &lt;audio src="music.mp3" controls&gt;&lt;/audio&gt;
-        </code>
-                </pre>
-            </p>
-            <h2>Video (Using &lt;video&gt;)</h2>
-            <p>
-                The &lt;video&gt; element seamlessly embeds videos into webpages. It supports various formats (e.g., MP4, WebM) for broader compatibility. Customize playback controls, dimensions, and multiple source formats.
-                <br>
-                Example:
-                <pre class="language-html">
-<code>
-        &lt;video width="640" height="360" controls&gt;
-            &lt;source src="video.mp4" type="video/mp4"&gt;
-            &lt;source src="video.webm" type="video/webm"&gt;
-            Your browser does not support the video tag.
-        &lt;/video&gt;
-        </code>
-                </pre>
-            </p>
-            <h2>Embedding YouTube Videos</h2>
-            <p>
-                Use an &lt;iframe&gt; element with the YouTube video URL to easily embed and play YouTube videos on your website.
-                <br>
-                Example:
-                <pre class="language-html">
-<code>
-        &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-</code>
-                </pre>
-            </p>
-            <h2>Plugins</h2>
-            <p>
-                Plugins extend the functionality of web browsers. Common examples include Flash and Java applets, although their usage has decreased over time due to security concerns and evolving web standards.
-            </p>
-            <h2>Enhancing User Experience</h2>
-            <p>
-                HTML media elements and plugins empower web developers to create interactive, multimedia-rich experiences, making web content more engaging and appealing to users.
-            </p>
         </div>
-        
-        
-        
 
         <div class="navigation-link">
-            <a href="../html_acessibility/"><i class="bi bi-chevron-double-left"></i> Previous</a>
-            <a href="../html_semantics/">Next <i class="bi bi-chevron-double-right"></i></a>
+            <a href="../html_media/"><i class="bi bi-chevron-double-left"></i> Previous</a>
+            <a href="../html_intro/">Next <i class="bi bi-chevron-double-right"></i></a>
         </div>
     </main>
 
     <div include-html="../../include/post__footer.html" id="footer_file"></div>
-    <script src="../../Website/JavaScript/jquery-3.6.0.min.js"></script>
-    <script src="../../Website/JavaScript/include-html.min.js"></script>
 
     <script src="../../Website/Style/vender/js/prism.js"></script>
     <script src="../../Website/app.js"></script>
+    <script src="../../Website/Style/vender/js/video-play.js" crossorigin="anonymous"></script>
+    <script src="../../Website/JavaScript/jquery-3.6.0.min.js"></script>
+    <script src="../../Website/JavaScript/include-html.min.js"></script>
+    <script>
+        const player = new Plyr('#player');
+    </script>
 </body>
 
 </html>
