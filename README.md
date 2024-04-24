@@ -47,3 +47,9 @@ To embed a video on the page:
     - In the example above, the video files are located in `./cdn/video/`, where `cdn` exists in the same directory as the topic's `index.html` file.
 
 For more information on the HTML structure of topic webpages, please look into the `copy.html` file.
+
+## Our Contributors
+
+<a href="https://github.com/Diptenusarkar/html.org.in">
+  <img src="https://contrib.rocks/image?repo=Diptenusarkar/html.org.in" />
+</a>
