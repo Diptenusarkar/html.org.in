@@ -8,45 +8,88 @@ And there are no ads on the website.
 We respect your privacy, so we do not track and do not sell any of your personal data.  
 We only store one cookie, which saves your preference of dark or light theme.
 
-## How can you contribute?
-This section discusses how to contribute to the learning content of this project, whether that is adding new content which addresses a new topic, or updating existing content that is already on the website.
+# How can you contribute?
 
-### How can you contribute a new tutorial?
-This section descibes how to add a new tutorial to the website.
+Thank you for your interest in contributing to this project! This guide will help you understand how to contribute effectively to our HTML-based documentation.
 
-1. Create a sub-folder within the `html` folder.
-2. Name this sub-folder using the format `html_topic`.
-    - For example, the **HTML Introduction** topic folder is named `html_intro`.
-3. Create an `index.html` file inside of the sub-folder you just created.
-4. Open the `copy.html` file in the repository's main directory.
-5. Copy the HTML contents of the `copy.html` file into your newly-created `html_topic/index.html` file.
-    - `copy.html` contains the basic structure that topic webpages follow in this project. It includes the HTML code for the metadata, header, footer and navigation buttons.
-    - Edit the `<main>` element to add your tutorial content to the webpage.
-    - Note that there are two `<div class="navigation-link">` elements within `<main>`. These two `<div>` elements contain the navigation buttons.
-6. After creating the 'index.html' page of yours,add the links of previous file and next file to your html page inside `<div class="navigation-link">`.
-7. 
-   **Adding a video to the topic page**  
-If you would like to add a video to the topic's webpage, see the code below:
+## Contribution Guidelines
+
+### 1. What You Can Add
+- **New HTML Pages:** Create new pages for topics or features.
+- **Enhance Existing Pages:** Improve clarity, fix typos, or add examples.
+- **Content Elements:**
+  - Headers (`<h1>`, `<h2>`, etc.)
+  - Paragraphs (`<p>`)
+  - Lists (`<ul>`, `<ol>`, `<li>`)
+  - Horizontal lines (`<hr>`)
+  - Code examples (`<pre><code>`)
+  - Links (`<a href="...">`)
+  - Images (`<img>`)
+  - Tables (`<table>`, `<tr>`, `<th>`, `<td>`)
+
+### 2. HTML Style and Structure
+- Use semantic HTML tags.
+- Maintain consistent indentation and formatting.
+- Add comments (`<!-- ... -->`) for complex sections.
+- Avoid inline styles; use classes and external CSS.
+- Test your changes in a browser.
+
+### 3. Example HTML Snippets
 
 ```html
-<div class="video__plyr">
-    <video id="player" playsinline controls crossorigin data-poster="/path/to/poster.jpg">
-    <source src="./cdn/video/Codes - 360.mp4" type="video/mp4" size="360" />
-    <source src="./cdn/video/Codes - 540.mp4" type="video/mp4" size="576" />
-    <source src="./cdn/video/Codes - 720.mp4" type="video/mp4" size="720" />
-    <source src="./cdn/video/codes - 1080.mp4" type="video/mp4" size="1080" />
-    </video>
-</div>
+<!-- Header -->
+<h2>Section Title</h2>
+
+<!-- Paragraph -->
+<p>This is a paragraph explaining a concept or example.</p>
+
+<!-- Horizontal line -->
+<hr>
+
+<!-- List -->
+<ul>
+  <li>First item</li>
+  <li>Second item</li>
+</ul>
+
+<!-- Code block -->
+<pre><code>&lt;div&gt;Sample code&lt;/div&gt;</code></pre>
+
+<!-- Link -->
+<a href="https://example.com">Visit Example</a>
+
+<!-- Image -->
+<img src="/images/example.png" alt="Example image">
 ```
 
-To embed a video on the page:
-- Add a `<div>` to the `index.html` file for your topic. Ensure that the `<div>`'s structure is similar to the one above.
-- Inside the `<div>`, add one `<source>` element for each resolution/quality you will have for the video.
-    - In the example above, the video is available in four resolutions so there are four `<source>` elements.
-- Set the `src` attribute of the `<source>` element to a string containing the filepath/URL to the video.
-    - In the example above, the video files are located in `./cdn/video/`, where `cdn` exists in the same directory as the topic's `index.html` file.
+### 4. Adding Links to the Aside Slider (Navigation)
+To add a new link to the aside slider:
+1. Open the relevant HTML file (e.g., `index.html`) in the `html/` folder.
+2. Locate the `<nav>` element for the aside slider.
+3. Add a new navigation item:
 
-For more information on the HTML structure of topic webpages, please look into the `copy.html` file.
+```html
+<sl-tree-item id="unique-id" style="--indent-level: 0" class="leaf">
+  <a href="/html/your-new-page/">Your New Page</a>
+</sl-tree-item>
+```
+
+4. Save the file and verify the link in your browser.
+
+> **Tip:** Use a unique `id` and follow existing conventions.
+
+### 5. Submitting Your Contribution
+1. Edit or add HTML files in the `html/` folder.
+2. Test your changes in a browser.
+3. Ensure your code is clean and well-formatted.
+4. Submit your changes for review (via pull request or your team's process).
+
+### 6. Communication & Feedback
+- Be respectful and constructive in discussions.
+- Respond to feedback and requested changes promptly.
+
+We appreciate your help in improving this project!
+
 
 ## Our Contributors
 
